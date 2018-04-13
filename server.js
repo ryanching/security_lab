@@ -19,7 +19,7 @@ var consolidate = require("consolidate"); // Templating library adapter for Expr
 var swig = require("swig");
 var http = require("http");
 var marked = require("marked");
-
+var helmet = require("helmet");
 var logger = require("morgan");
 
 var config = require("./config.js");
@@ -29,7 +29,6 @@ var contributions = require("./contributions.js");
 var benefits = require("./benefits.js");
 var allocations = require("./allocations.js");
 var memos = require("./memos.js");
- 
 
 
 
@@ -45,6 +44,22 @@ function setup()
 
    app.disable("x-powered-by");
    app.use(favicon(__dirname + "/app/assets/favicon.ico"));
+
+   // uses helmet's xssFilter, hsts, and frameguard (as per helmet's default settings)
+   app.use(helmet());
+
+   // Disables client side caching
+   app.use(helmet.noCache());
+
+   // Sets content security policy to protect against injections
+   app.use(helmet.contentSecurityPolicy({
+     directives: {
+       defaultSrc: ["'self'"],
+       styleSrc: ["'self'", 'maxcdn.bootstrapcdn.com']
+     }
+   }))
+
+   app.use(helmet.xssFilter({setOnOldIE: true}));
 
    app.use(bodyParser.json());
    app.use(bodyParser.urlencoded({ extended: false }));
