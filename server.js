@@ -15,6 +15,8 @@ var favicon = require("serve-favicon");
 var bodyParser = require("body-parser");
 var session = require("express-session");
 
+var csrf = require('csurf');
+
 var consolidate = require("consolidate"); // Templating library adapter for Express
 var swig = require("swig");
 var http = require("http");
@@ -29,7 +31,7 @@ var contributions = require("./contributions.js");
 var benefits = require("./benefits.js");
 var allocations = require("./allocations.js");
 var memos = require("./memos.js");
- 
+
 
 
 
@@ -48,10 +50,17 @@ function setup()
 
    app.use(bodyParser.json());
    app.use(bodyParser.urlencoded({ extended: false }));
-   
+
    app.use(session({ secret: config.COOKIE_SECRET,
 		     saveUninitialized: true,
 		     resave: true }));
+
+   app.use(csrf());
+   // Make csrf token available in templates
+   app.use(function(req, res, next) {
+      res.locals.csrftoken = req.csrfToken();
+      next();
+    });
 
    // Register templating engine
    app.engine(".html", consolidate.swig);
@@ -59,9 +68,9 @@ function setup()
    app.set("views", __dirname + "/app/views");
 
    app.use(express.static(__dirname + "/app/assets"));
-   
+
    app.use(logger('combined'));
-   
+
    // intialize marked library
    marked.setOptions({ });
    app.locals.marked = marked;
