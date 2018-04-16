@@ -1,4 +1,4 @@
-/********************************************************************************/
+d/********************************************************************************/
 /*										*/
 /*	Main Server for Security Lab						*/
 /*										*/
@@ -15,7 +15,7 @@ var favicon = require("serve-favicon");
 var bodyParser = require("body-parser");
 var session = require("express-session");
 
-//var csrf = require('csurf');
+var csrf = require('csurf');
 
 var consolidate = require("consolidate"); // Templating library adapter for Express
 var swig = require("swig");
@@ -59,7 +59,7 @@ function setup()
        defaultSrc: ["'self'"],
        styleSrc: ["'self'", 'maxcdn.bootstrapcdn.com']
      }
-   }))
+   }));
 
    app.use(helmet.xssFilter({setOnOldIE: true}));
 
@@ -70,12 +70,13 @@ function setup()
 		     saveUninitialized: true,
 		     resave: true }));
 
-//    app.use(csrf());
-//    // Make csrf token available in templates
-//    app.use(function(req, res, next) {
-//       res.locals.csrftoken = req.csrfToken();
-//       next();
-//     });
+   // Uses Node.js CSRF protection middleware:
+   app.use(csrf());
+   // Makes csrf token available in templates: 
+   app.use(function(req, res, next) {
+      res.locals.csrftoken = req.csrfToken();
+      next();
+    });
 
    // Register templating engine
    app.engine(".html", consolidate.swig);
