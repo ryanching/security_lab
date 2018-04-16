@@ -1,5 +1,12 @@
 # security_lab
-CS132 Spring 2017 Security Lab
+CS132 Spring 2017 Security 
+
+Group members: Katie Normandin, Ryan Ching, and Peter Griesmer
+
+We all tried to improve the defenses associated with our server (on port 7020).
+
+We added Helmet to add XSS and other protections. We added csurf to protect our server from CSRF attacks.
+
 
 ## Phase 2: Configuration
 Before reading this README, please make sure you've completed the instructions on Prelab 2 Phase 1. As a reminder, that phase introduced you to the VM where your application will be running on. It was also during that phase where you've forked this directory.
