@@ -5,7 +5,7 @@ Group members: Katie Normandin, Ryan Ching, and Peter Griesmer
 
 We all tried to improve the defenses associated with our server (on port 7020).
 
-We added Helmet to add XSS and other protections. We added csurf to protect our server from CSRF attacks.
+We added Helmet to add XSS and other protections. We added csurf to protect our server from CSRF attacks. We updated the sql queries to protect against sql injections.
 
 
 ## Phase 2: Configuration
