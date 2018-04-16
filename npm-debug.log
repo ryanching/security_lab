@@ -1,0 +1,62 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.29
+4 warn package.json owasp-nodejs-goat@1.3.0 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/vol/home/rching/security_lab',
+6 verbose install   [ 'body-parser',
+6 verbose install     'express',
+6 verbose install     'express-session',
+6 verbose install     'serve-favicon',
+6 verbose install     'swig',
+6 verbose install     'any-db',
+6 verbose install     'any-db-mysql',
+6 verbose install     'consolidate',
+6 verbose install     'underscore',
+6 verbose install     'morgan',
+6 verbose install     'marked' ] ]
+7 info preinstall owasp-nodejs-goat@1.3.0
+8 verbose readDependencies using package.json deps
+9 verbose already installed skipping express-session@^1.13.0 /vol/home/rching/security_lab
+10 verbose already installed skipping serve-favicon@^2.3.0 /vol/home/rching/security_lab
+11 verbose already installed skipping swig@^1.4.2 /vol/home/rching/security_lab
+12 verbose already installed skipping any-db@^2.1.0 /vol/home/rching/security_lab
+13 verbose already installed skipping any-db-mysql@^2.1.2 /vol/home/rching/security_lab
+14 verbose already installed skipping consolidate@^0.14.5 /vol/home/rching/security_lab
+15 verbose already installed skipping underscore@^1.8.3 /vol/home/rching/security_lab
+16 verbose already installed skipping morgan@^1.8.1 /vol/home/rching/security_lab
+17 verbose already installed skipping marked@^0.3.6 /vol/home/rching/security_lab
+18 verbose already installed skipping body-parser@^1.15.1 /vol/home/rching/security_lab
+19 verbose already installed skipping express@^4.13.4 /vol/home/rching/security_lab
+20 silly resolved []
+21 info build /vol/home/rching/security_lab
+22 verbose linkStuff [ false, false, false, '/vol/home/rching' ]
+23 info linkStuff owasp-nodejs-goat@1.3.0
+24 verbose linkBins owasp-nodejs-goat@1.3.0
+25 verbose linkMans owasp-nodejs-goat@1.3.0
+26 verbose rebuildBundles owasp-nodejs-goat@1.3.0
+27 verbose rebuildBundles [ '.bin',
+27 verbose rebuildBundles   'any-db',
+27 verbose rebuildBundles   'any-db-mysql',
+27 verbose rebuildBundles   'body-parser',
+27 verbose rebuildBundles   'consolidate',
+27 verbose rebuildBundles   'express',
+27 verbose rebuildBundles   'express-session',
+27 verbose rebuildBundles   'marked',
+27 verbose rebuildBundles   'morgan',
+27 verbose rebuildBundles   'serve-favicon',
+27 verbose rebuildBundles   'swig',
+27 verbose rebuildBundles   'underscore' ]
+28 info install owasp-nodejs-goat@1.3.0
+29 info postinstall owasp-nodejs-goat@1.3.0
+30 info prepublish owasp-nodejs-goat@1.3.0
+31 error peerinvalid The package any-db does not satisfy its siblings' peerDependencies requirements!
+31 error peerinvalid Peer any-db-mysql@2.1.2 wants any-db@~2.1.0
+32 error System Linux 3.16.0-4-amd64
+33 error command "/usr/bin/nodejs" "/usr/bin/npm" "install"
+34 error cwd /vol/home/rching/security_lab
+35 error node -v v0.10.29
+36 error npm -v 1.4.21
+37 error code EPEERINVALID
+38 verbose exit [ 1, true ]
