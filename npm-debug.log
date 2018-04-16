@@ -1,0 +1,1747 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'csurf', '--save' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.29
+4 warn package.json owasp-nodejs-goat@1.3.0 No repository field.
+5 warn package.json window-size@0.1.0 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'csurf', null ]
+8 verbose cache add name=undefined spec="csurf" args=["csurf",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'csurf',
+9 verbose parsed url   path: 'csurf',
+9 verbose parsed url   href: 'csurf' }
+10 silly lockFile 41ee80a5-csurf csurf
+11 verbose lock csurf /home/knormand/.npm/41ee80a5-csurf.lock
+12 silly lockFile 41ee80a5-csurf csurf
+13 silly lockFile 41ee80a5-csurf csurf
+14 verbose addNamed [ 'csurf', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile 52b0498c-csurf csurf@
+17 verbose lock csurf@ /home/knormand/.npm/52b0498c-csurf.lock
+18 silly addNameRange { name: 'csurf', range: '*', hasData: false }
+19 verbose request where is /csurf
+20 verbose request registry https://registry.npmjs.org/
+21 verbose request id 62ac5b584dc828ca
+22 verbose url raw /csurf
+23 verbose url resolving [ 'https://registry.npmjs.org/', './csurf' ]
+24 verbose url resolved https://registry.npmjs.org/csurf
+25 verbose request where is https://registry.npmjs.org/csurf
+26 info trying registry request attempt 1 at 10:08:46
+27 verbose etag "5ab3de95-cc55"
+28 http GET https://registry.npmjs.org/csurf
+29 http 304 https://registry.npmjs.org/csurf
+30 silly registry.get cb [ 304,
+30 silly registry.get   { date: 'Mon, 16 Apr 2018 14:08:46 GMT',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     'cache-control': 'max-age=300',
+30 silly registry.get     etag: '"5ab3de95-cc55"',
+30 silly registry.get     age: '13831',
+30 silly registry.get     connection: 'keep-alive',
+30 silly registry.get     'x-served-by': 'cache-bos8228-BOS',
+30 silly registry.get     'x-cache': 'HIT',
+30 silly registry.get     'x-cache-hits': '1',
+30 silly registry.get     'x-timer': 'S1523887726.046201,VS0,VE0',
+30 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+31 verbose etag https://registry.npmjs.org/csurf from cache
+32 silly addNameRange number 2 { name: 'csurf', range: '*', hasData: true }
+33 silly addNameRange versions [ 'csurf',
+33 silly addNameRange   [ '0.0.1',
+33 silly addNameRange     '0.0.2',
+33 silly addNameRange     '0.1.0',
+33 silly addNameRange     '0.1.1',
+33 silly addNameRange     '0.1.2',
+33 silly addNameRange     '1.0.0',
+33 silly addNameRange     '1.1.0',
+33 silly addNameRange     '1.2.0',
+33 silly addNameRange     '1.2.1',
+33 silly addNameRange     '1.2.2',
+33 silly addNameRange     '1.3.0',
+33 silly addNameRange     '1.4.0',
+33 silly addNameRange     '1.4.1',
+33 silly addNameRange     '1.5.0',
+33 silly addNameRange     '1.6.0',
+33 silly addNameRange     '1.6.1',
+33 silly addNameRange     '1.6.2',
+33 silly addNameRange     '1.6.3',
+33 silly addNameRange     '1.6.4',
+33 silly addNameRange     '1.6.5',
+33 silly addNameRange     '1.6.6',
+33 silly addNameRange     '1.7.0',
+33 silly addNameRange     '1.8.0',
+33 silly addNameRange     '1.8.1',
+33 silly addNameRange     '1.8.2',
+33 silly addNameRange     '1.8.3',
+33 silly addNameRange     '1.9.0' ] ]
+34 verbose addNamed [ 'csurf', '1.9.0' ]
+35 verbose addNamed [ '1.9.0', '1.9.0' ]
+36 silly lockFile cf2fbec6-csurf-1-9-0 csurf@1.9.0
+37 verbose lock csurf@1.9.0 /home/knormand/.npm/cf2fbec6-csurf-1-9-0.lock
+38 silly lockFile cf2fbec6-csurf-1-9-0 csurf@1.9.0
+39 silly lockFile cf2fbec6-csurf-1-9-0 csurf@1.9.0
+40 silly lockFile 52b0498c-csurf csurf@
+41 silly lockFile 52b0498c-csurf csurf@
+42 silly resolved [ { name: 'csurf',
+42 silly resolved     description: 'CSRF token middleware',
+42 silly resolved     version: '1.9.0',
+42 silly resolved     author:
+42 silly resolved      { name: 'Jonathan Ong',
+42 silly resolved        email: 'me@jongleberry.com',
+42 silly resolved        url: 'http://jongleberry.com' },
+42 silly resolved     contributors: [ [Object] ],
+42 silly resolved     license: 'MIT',
+42 silly resolved     repository: { type: 'git', url: 'https://github.com/expressjs/csurf' },
+42 silly resolved     dependencies:
+42 silly resolved      { cookie: '0.3.1',
+42 silly resolved        'cookie-signature': '1.0.6',
+42 silly resolved        csrf: '~3.0.3',
+42 silly resolved        'http-errors': '~1.5.0' },
+42 silly resolved     devDependencies:
+42 silly resolved      { 'body-parser': '1.15.1',
+42 silly resolved        connect: '3.4.1',
+42 silly resolved        'cookie-parser': '1.4.3',
+42 silly resolved        'cookie-session': '~1.1.0',
+42 silly resolved        eslint: '2.10.2',
+42 silly resolved        'eslint-config-standard': '5.3.1',
+42 silly resolved        'eslint-plugin-promise': '1.3.1',
+42 silly resolved        'eslint-plugin-standard': '1.3.2',
+42 silly resolved        istanbul: '0.4.3',
+42 silly resolved        mocha: '2.5.3',
+42 silly resolved        supertest: '1.1.0' },
+42 silly resolved     engines: { node: '>= 0.8.0' },
+42 silly resolved     scripts:
+42 silly resolved      { lint: 'eslint **/*.js',
+42 silly resolved        test: 'mocha --check-leaks --reporter spec --bail test/',
+42 silly resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/',
+42 silly resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/' },
+42 silly resolved     files: [ 'HISTORY.md', 'LICENSE', 'index.js' ],
+42 silly resolved     keywords: [ 'csrf', 'tokens', 'middleware', 'express' ],
+42 silly resolved     gitHead: '6359a0298e1e3e937abb96c21958b2a4419d0301',
+42 silly resolved     bugs: { url: 'https://github.com/expressjs/csurf/issues' },
+42 silly resolved     homepage: 'https://github.com/expressjs/csurf',
+42 silly resolved     _id: 'csurf@1.9.0',
+42 silly resolved     _shasum: '49d2c6925ffcec7b7de559597c153fa533364133',
+42 silly resolved     _from: 'csurf@',
+42 silly resolved     _npmVersion: '1.4.28',
+42 silly resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+42 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+42 silly resolved     dist:
+42 silly resolved      { shasum: '49d2c6925ffcec7b7de559597c153fa533364133',
+42 silly resolved        tarball: 'https://registry.npmjs.org/csurf/-/csurf-1.9.0.tgz' },
+42 silly resolved     _npmOperationalInternal:
+42 silly resolved      { host: 'packages-12-west.internal.npmjs.com',
+42 silly resolved        tmp: 'tmp/csurf-1.9.0.tgz_1464369669689_0.553399148164317' },
+42 silly resolved     directories: {},
+42 silly resolved     _resolved: 'https://registry.npmjs.org/csurf/-/csurf-1.9.0.tgz',
+42 silly resolved     readme: 'ERROR: No README data found!' } ]
+43 info install csurf@1.9.0 into /vol/home/knormand/security_lab
+44 info installOne csurf@1.9.0
+45 verbose node_modules/csurf unbuild
+46 info preuninstall csurf@1.9.0
+47 info uninstall csurf@1.9.0
+48 verbose true,/vol/home/knormand/security_lab/node_modules,/vol/home/knormand/security_lab/node_modules unbuild csurf@1.9.0
+49 info postuninstall csurf@1.9.0
+50 verbose tar unpack /home/knormand/.npm/csurf/1.9.0/package.tgz
+51 silly lockFile 850ccebd--security-lab-node-modules-csurf tar:///vol/home/knormand/security_lab/node_modules/csurf
+52 verbose lock tar:///vol/home/knormand/security_lab/node_modules/csurf /home/knormand/.npm/850ccebd--security-lab-node-modules-csurf.lock
+53 silly lockFile 0521191e-mand-npm-csurf-1-9-0-package-tgz tar:///home/knormand/.npm/csurf/1.9.0/package.tgz
+54 verbose lock tar:///home/knormand/.npm/csurf/1.9.0/package.tgz /home/knormand/.npm/0521191e-mand-npm-csurf-1-9-0-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 silly gunzTarPerm extractEntry package.json
+57 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+58 silly gunzTarPerm extractEntry README.md
+59 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+60 silly gunzTarPerm extractEntry LICENSE
+61 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+62 silly gunzTarPerm extractEntry index.js
+63 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+64 silly gunzTarPerm extractEntry HISTORY.md
+65 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+66 silly lockFile 850ccebd--security-lab-node-modules-csurf tar:///vol/home/knormand/security_lab/node_modules/csurf
+67 silly lockFile 850ccebd--security-lab-node-modules-csurf tar:///vol/home/knormand/security_lab/node_modules/csurf
+68 silly lockFile 0521191e-mand-npm-csurf-1-9-0-package-tgz tar:///home/knormand/.npm/csurf/1.9.0/package.tgz
+69 silly lockFile 0521191e-mand-npm-csurf-1-9-0-package-tgz tar:///home/knormand/.npm/csurf/1.9.0/package.tgz
+70 info preinstall csurf@1.9.0
+71 verbose readDependencies using package.json deps
+72 verbose readDependencies using package.json deps
+73 verbose cache add [ 'cookie@0.3.1', null ]
+74 verbose cache add name=undefined spec="cookie@0.3.1" args=["cookie@0.3.1",null]
+75 verbose parsed url { protocol: null,
+75 verbose parsed url   slashes: null,
+75 verbose parsed url   auth: null,
+75 verbose parsed url   host: null,
+75 verbose parsed url   port: null,
+75 verbose parsed url   hostname: null,
+75 verbose parsed url   hash: null,
+75 verbose parsed url   search: null,
+75 verbose parsed url   query: null,
+75 verbose parsed url   pathname: 'cookie@0.3.1',
+75 verbose parsed url   path: 'cookie@0.3.1',
+75 verbose parsed url   href: 'cookie@0.3.1' }
+76 verbose cache add [ 'cookie-signature@1.0.6', null ]
+77 verbose cache add name=undefined spec="cookie-signature@1.0.6" args=["cookie-signature@1.0.6",null]
+78 verbose parsed url { protocol: null,
+78 verbose parsed url   slashes: null,
+78 verbose parsed url   auth: null,
+78 verbose parsed url   host: null,
+78 verbose parsed url   port: null,
+78 verbose parsed url   hostname: null,
+78 verbose parsed url   hash: null,
+78 verbose parsed url   search: null,
+78 verbose parsed url   query: null,
+78 verbose parsed url   pathname: 'cookie-signature@1.0.6',
+78 verbose parsed url   path: 'cookie-signature@1.0.6',
+78 verbose parsed url   href: 'cookie-signature@1.0.6' }
+79 verbose cache add name="cookie" spec="0.3.1" args=["cookie","0.3.1"]
+80 verbose parsed url { protocol: null,
+80 verbose parsed url   slashes: null,
+80 verbose parsed url   auth: null,
+80 verbose parsed url   host: null,
+80 verbose parsed url   port: null,
+80 verbose parsed url   hostname: null,
+80 verbose parsed url   hash: null,
+80 verbose parsed url   search: null,
+80 verbose parsed url   query: null,
+80 verbose parsed url   pathname: '0.3.1',
+80 verbose parsed url   path: '0.3.1',
+80 verbose parsed url   href: '0.3.1' }
+81 verbose addNamed [ 'cookie', '0.3.1' ]
+82 verbose addNamed [ '0.3.1', '0.3.1' ]
+83 silly lockFile 8e3415cc-cookie-0-3-1 cookie@0.3.1
+84 verbose lock cookie@0.3.1 /home/knormand/.npm/8e3415cc-cookie-0-3-1.lock
+85 verbose cache add name="cookie-signature" spec="1.0.6" args=["cookie-signature","1.0.6"]
+86 verbose parsed url { protocol: null,
+86 verbose parsed url   slashes: null,
+86 verbose parsed url   auth: null,
+86 verbose parsed url   host: null,
+86 verbose parsed url   port: null,
+86 verbose parsed url   hostname: null,
+86 verbose parsed url   hash: null,
+86 verbose parsed url   search: null,
+86 verbose parsed url   query: null,
+86 verbose parsed url   pathname: '1.0.6',
+86 verbose parsed url   path: '1.0.6',
+86 verbose parsed url   href: '1.0.6' }
+87 verbose addNamed [ 'cookie-signature', '1.0.6' ]
+88 verbose addNamed [ '1.0.6', '1.0.6' ]
+89 silly lockFile 73d54cec-cookie-signature-1-0-6 cookie-signature@1.0.6
+90 verbose lock cookie-signature@1.0.6 /home/knormand/.npm/73d54cec-cookie-signature-1-0-6.lock
+91 verbose cache add [ 'csrf@~3.0.3', null ]
+92 verbose cache add name=undefined spec="csrf@~3.0.3" args=["csrf@~3.0.3",null]
+93 verbose parsed url { protocol: null,
+93 verbose parsed url   slashes: null,
+93 verbose parsed url   auth: null,
+93 verbose parsed url   host: null,
+93 verbose parsed url   port: null,
+93 verbose parsed url   hostname: null,
+93 verbose parsed url   hash: null,
+93 verbose parsed url   search: null,
+93 verbose parsed url   query: null,
+93 verbose parsed url   pathname: 'csrf@~3.0.3',
+93 verbose parsed url   path: 'csrf@~3.0.3',
+93 verbose parsed url   href: 'csrf@~3.0.3' }
+94 verbose cache add [ 'http-errors@~1.5.0', null ]
+95 verbose cache add name=undefined spec="http-errors@~1.5.0" args=["http-errors@~1.5.0",null]
+96 verbose parsed url { protocol: null,
+96 verbose parsed url   slashes: null,
+96 verbose parsed url   auth: null,
+96 verbose parsed url   host: null,
+96 verbose parsed url   port: null,
+96 verbose parsed url   hostname: null,
+96 verbose parsed url   hash: null,
+96 verbose parsed url   search: null,
+96 verbose parsed url   query: null,
+96 verbose parsed url   pathname: 'http-errors@~1.5.0',
+96 verbose parsed url   path: 'http-errors@~1.5.0',
+96 verbose parsed url   href: 'http-errors@~1.5.0' }
+97 verbose cache add name="csrf" spec="~3.0.3" args=["csrf","~3.0.3"]
+98 verbose parsed url { protocol: null,
+98 verbose parsed url   slashes: null,
+98 verbose parsed url   auth: null,
+98 verbose parsed url   host: null,
+98 verbose parsed url   port: null,
+98 verbose parsed url   hostname: null,
+98 verbose parsed url   hash: null,
+98 verbose parsed url   search: null,
+98 verbose parsed url   query: null,
+98 verbose parsed url   pathname: '~3.0.3',
+98 verbose parsed url   path: '~3.0.3',
+98 verbose parsed url   href: '~3.0.3' }
+99 verbose addNamed [ 'csrf', '~3.0.3' ]
+100 verbose addNamed [ null, '>=3.0.3-0 <3.1.0-0' ]
+101 silly lockFile ef6b2b8d-csrf-3-0-3 csrf@~3.0.3
+102 verbose lock csrf@~3.0.3 /home/knormand/.npm/ef6b2b8d-csrf-3-0-3.lock
+103 verbose cache add name="http-errors" spec="~1.5.0" args=["http-errors","~1.5.0"]
+104 verbose parsed url { protocol: null,
+104 verbose parsed url   slashes: null,
+104 verbose parsed url   auth: null,
+104 verbose parsed url   host: null,
+104 verbose parsed url   port: null,
+104 verbose parsed url   hostname: null,
+104 verbose parsed url   hash: null,
+104 verbose parsed url   search: null,
+104 verbose parsed url   query: null,
+104 verbose parsed url   pathname: '~1.5.0',
+104 verbose parsed url   path: '~1.5.0',
+104 verbose parsed url   href: '~1.5.0' }
+105 verbose addNamed [ 'http-errors', '~1.5.0' ]
+106 verbose addNamed [ null, '>=1.5.0-0 <1.6.0-0' ]
+107 silly lockFile 1f30de92-http-errors-1-5-0 http-errors@~1.5.0
+108 verbose lock http-errors@~1.5.0 /home/knormand/.npm/1f30de92-http-errors-1-5-0.lock
+109 verbose request where is /cookie
+110 verbose request registry https://registry.npmjs.org/
+111 verbose url raw /cookie
+112 verbose url resolving [ 'https://registry.npmjs.org/', './cookie' ]
+113 verbose url resolved https://registry.npmjs.org/cookie
+114 verbose request where is https://registry.npmjs.org/cookie
+115 info trying registry request attempt 1 at 10:08:46
+116 verbose etag "5a9f8e1d-81cd"
+117 http GET https://registry.npmjs.org/cookie
+118 silly addNameRange { name: 'csrf', range: '>=3.0.3-0 <3.1.0-0', hasData: false }
+119 silly addNameRange { name: 'http-errors',
+119 silly addNameRange   range: '>=1.5.0-0 <1.6.0-0',
+119 silly addNameRange   hasData: false }
+120 verbose request where is /cookie-signature
+121 verbose request registry https://registry.npmjs.org/
+122 verbose url raw /cookie-signature
+123 verbose url resolving [ 'https://registry.npmjs.org/', './cookie-signature' ]
+124 verbose url resolved https://registry.npmjs.org/cookie-signature
+125 verbose request where is https://registry.npmjs.org/cookie-signature
+126 info trying registry request attempt 1 at 10:08:46
+127 verbose etag "5a6174e3-2a4a"
+128 http GET https://registry.npmjs.org/cookie-signature
+129 verbose request where is /csrf
+130 verbose request registry https://registry.npmjs.org/
+131 verbose url raw /csrf
+132 verbose url resolving [ 'https://registry.npmjs.org/', './csrf' ]
+133 verbose url resolved https://registry.npmjs.org/csrf
+134 verbose request where is https://registry.npmjs.org/csrf
+135 info trying registry request attempt 1 at 10:08:46
+136 verbose etag "5ab3de6f-7c13"
+137 http GET https://registry.npmjs.org/csrf
+138 verbose request where is /http-errors
+139 verbose request registry https://registry.npmjs.org/
+140 verbose url raw /http-errors
+141 verbose url resolving [ 'https://registry.npmjs.org/', './http-errors' ]
+142 verbose url resolved https://registry.npmjs.org/http-errors
+143 verbose request where is https://registry.npmjs.org/http-errors
+144 info trying registry request attempt 1 at 10:08:46
+145 verbose etag "5abd4c94-9d63"
+146 http GET https://registry.npmjs.org/http-errors
+147 http 304 https://registry.npmjs.org/cookie
+148 silly registry.get cb [ 304,
+148 silly registry.get   { date: 'Mon, 16 Apr 2018 14:08:46 GMT',
+148 silly registry.get     via: '1.1 varnish',
+148 silly registry.get     'cache-control': 'max-age=300',
+148 silly registry.get     etag: '"5a9f8e1d-81cd"',
+148 silly registry.get     age: '5653',
+148 silly registry.get     connection: 'keep-alive',
+148 silly registry.get     'x-served-by': 'cache-bos8221-BOS',
+148 silly registry.get     'x-cache': 'HIT',
+148 silly registry.get     'x-cache-hits': '2',
+148 silly registry.get     'x-timer': 'S1523887726.467745,VS0,VE0',
+148 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+149 verbose etag https://registry.npmjs.org/cookie from cache
+150 http 304 https://registry.npmjs.org/cookie-signature
+151 silly registry.get cb [ 304,
+151 silly registry.get   { date: 'Mon, 16 Apr 2018 14:08:46 GMT',
+151 silly registry.get     via: '1.1 varnish',
+151 silly registry.get     'cache-control': 'max-age=300',
+151 silly registry.get     etag: '"5a6174e3-2a4a"',
+151 silly registry.get     age: '4878',
+151 silly registry.get     connection: 'keep-alive',
+151 silly registry.get     'x-served-by': 'cache-bos8234-BOS',
+151 silly registry.get     'x-cache': 'HIT',
+151 silly registry.get     'x-cache-hits': '2',
+151 silly registry.get     'x-timer': 'S1523887726.472705,VS0,VE0',
+151 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+152 verbose etag https://registry.npmjs.org/cookie-signature from cache
+153 http 304 https://registry.npmjs.org/csrf
+154 silly registry.get cb [ 304,
+154 silly registry.get   { date: 'Mon, 16 Apr 2018 14:08:46 GMT',
+154 silly registry.get     via: '1.1 varnish',
+154 silly registry.get     'cache-control': 'max-age=300',
+154 silly registry.get     etag: '"5ab3de6f-7c13"',
+154 silly registry.get     age: '1136',
+154 silly registry.get     connection: 'keep-alive',
+154 silly registry.get     'x-served-by': 'cache-bos8224-BOS',
+154 silly registry.get     'x-cache': 'HIT',
+154 silly registry.get     'x-cache-hits': '1',
+154 silly registry.get     'x-timer': 'S1523887726.478112,VS0,VE0',
+154 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+155 verbose etag https://registry.npmjs.org/csrf from cache
+156 http 304 https://registry.npmjs.org/http-errors
+157 silly registry.get cb [ 304,
+157 silly registry.get   { date: 'Mon, 16 Apr 2018 14:08:46 GMT',
+157 silly registry.get     via: '1.1 varnish',
+157 silly registry.get     'cache-control': 'max-age=300',
+157 silly registry.get     etag: '"5abd4c94-9d63"',
+157 silly registry.get     age: '9809',
+157 silly registry.get     connection: 'keep-alive',
+157 silly registry.get     'x-served-by': 'cache-bos8231-BOS',
+157 silly registry.get     'x-cache': 'HIT',
+157 silly registry.get     'x-cache-hits': '3',
+157 silly registry.get     'x-timer': 'S1523887726.480477,VS0,VE0',
+157 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+158 verbose etag https://registry.npmjs.org/http-errors from cache
+159 silly addNameRange number 2 { name: 'csrf', range: '>=3.0.3-0 <3.1.0-0', hasData: true }
+160 silly addNameRange versions [ 'csrf',
+160 silly addNameRange   [ '0.0.1',
+160 silly addNameRange     '0.0.2',
+160 silly addNameRange     '0.0.3',
+160 silly addNameRange     '2.0.1',
+160 silly addNameRange     '2.0.2',
+160 silly addNameRange     '2.0.3',
+160 silly addNameRange     '2.0.4',
+160 silly addNameRange     '2.0.5',
+160 silly addNameRange     '2.0.6',
+160 silly addNameRange     '2.0.7',
+160 silly addNameRange     '3.0.0',
+160 silly addNameRange     '3.0.1',
+160 silly addNameRange     '3.0.2',
+160 silly addNameRange     '3.0.3',
+160 silly addNameRange     '3.0.4',
+160 silly addNameRange     '3.0.5',
+160 silly addNameRange     '3.0.6' ] ]
+161 verbose addNamed [ 'csrf', '3.0.6' ]
+162 verbose addNamed [ '3.0.6', '3.0.6' ]
+163 silly lockFile dd7ab2b8-csrf-3-0-6 csrf@3.0.6
+164 verbose lock csrf@3.0.6 /home/knormand/.npm/dd7ab2b8-csrf-3-0-6.lock
+165 silly addNameRange number 2 { name: 'http-errors',
+165 silly addNameRange   range: '>=1.5.0-0 <1.6.0-0',
+165 silly addNameRange   hasData: true }
+166 silly addNameRange versions [ 'http-errors',
+166 silly addNameRange   [ '0.0.1',
+166 silly addNameRange     '1.0.0',
+166 silly addNameRange     '1.0.1',
+166 silly addNameRange     '1.1.0',
+166 silly addNameRange     '1.2.0',
+166 silly addNameRange     '1.2.1',
+166 silly addNameRange     '1.2.2',
+166 silly addNameRange     '1.2.3',
+166 silly addNameRange     '1.2.4',
+166 silly addNameRange     '1.2.5',
+166 silly addNameRange     '1.2.6',
+166 silly addNameRange     '1.2.7',
+166 silly addNameRange     '1.2.8',
+166 silly addNameRange     '1.3.0',
+166 silly addNameRange     '1.3.1',
+166 silly addNameRange     '1.4.0',
+166 silly addNameRange     '1.5.0',
+166 silly addNameRange     '1.5.1',
+166 silly addNameRange     '1.6.0',
+166 silly addNameRange     '1.6.1',
+166 silly addNameRange     '1.6.2',
+166 silly addNameRange     '1.6.3' ] ]
+167 verbose addNamed [ 'http-errors', '1.5.1' ]
+168 verbose addNamed [ '1.5.1', '1.5.1' ]
+169 silly lockFile 8a91267b-http-errors-1-5-1 http-errors@1.5.1
+170 verbose lock http-errors@1.5.1 /home/knormand/.npm/8a91267b-http-errors-1-5-1.lock
+171 silly lockFile 8e3415cc-cookie-0-3-1 cookie@0.3.1
+172 silly lockFile 8e3415cc-cookie-0-3-1 cookie@0.3.1
+173 silly lockFile 73d54cec-cookie-signature-1-0-6 cookie-signature@1.0.6
+174 silly lockFile 73d54cec-cookie-signature-1-0-6 cookie-signature@1.0.6
+175 silly lockFile dd7ab2b8-csrf-3-0-6 csrf@3.0.6
+176 silly lockFile dd7ab2b8-csrf-3-0-6 csrf@3.0.6
+177 silly lockFile 8a91267b-http-errors-1-5-1 http-errors@1.5.1
+178 silly lockFile 8a91267b-http-errors-1-5-1 http-errors@1.5.1
+179 silly lockFile ef6b2b8d-csrf-3-0-3 csrf@~3.0.3
+180 silly lockFile ef6b2b8d-csrf-3-0-3 csrf@~3.0.3
+181 silly lockFile 1f30de92-http-errors-1-5-0 http-errors@~1.5.0
+182 silly lockFile 1f30de92-http-errors-1-5-0 http-errors@~1.5.0
+183 silly resolved [ { name: 'cookie',
+183 silly resolved     description: 'HTTP server cookie parsing and serialization',
+183 silly resolved     version: '0.3.1',
+183 silly resolved     author: { name: 'Roman Shtylman', email: 'shtylman@gmail.com' },
+183 silly resolved     contributors: [ [Object] ],
+183 silly resolved     license: 'MIT',
+183 silly resolved     keywords: [ 'cookie', 'cookies' ],
+183 silly resolved     repository: { type: 'git', url: 'https://github.com/jshttp/cookie' },
+183 silly resolved     devDependencies: { istanbul: '0.4.3', mocha: '1.21.5' },
+183 silly resolved     files: [ 'HISTORY.md', 'LICENSE', 'README.md', 'index.js' ],
+183 silly resolved     engines: { node: '>= 0.6' },
+183 silly resolved     scripts:
+183 silly resolved      { test: 'mocha --reporter spec --bail --check-leaks test/',
+183 silly resolved        'test-ci': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/',
+183 silly resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/' },
+183 silly resolved     gitHead: 'e3c77d497d66c8b8d4b677b8954c1b192a09f0b3',
+183 silly resolved     bugs: { url: 'https://github.com/jshttp/cookie/issues' },
+183 silly resolved     homepage: 'https://github.com/jshttp/cookie',
+183 silly resolved     _id: 'cookie@0.3.1',
+183 silly resolved     _shasum: 'e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb',
+183 silly resolved     _from: 'cookie@0.3.1',
+183 silly resolved     _npmVersion: '1.4.28',
+183 silly resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+183 silly resolved     maintainers: [ [Object] ],
+183 silly resolved     dist:
+183 silly resolved      { shasum: 'e7e0a1f9ef43b4c8ba925c5c5a96e806d16873bb',
+183 silly resolved        tarball: 'https://registry.npmjs.org/cookie/-/cookie-0.3.1.tgz' },
+183 silly resolved     _npmOperationalInternal:
+183 silly resolved      { host: 'packages-12-west.internal.npmjs.com',
+183 silly resolved        tmp: 'tmp/cookie-0.3.1.tgz_1464323556714_0.6435900838114321' },
+183 silly resolved     directories: {},
+183 silly resolved     _resolved: 'https://registry.npmjs.org/cookie/-/cookie-0.3.1.tgz',
+183 silly resolved     readme: 'ERROR: No README data found!' },
+183 silly resolved   { name: 'cookie-signature',
+183 silly resolved     version: '1.0.6',
+183 silly resolved     description: 'Sign and unsign cookies',
+183 silly resolved     keywords: [ 'cookie', 'sign', 'unsign' ],
+183 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@learnboost.com' },
+183 silly resolved     license: 'MIT',
+183 silly resolved     repository:
+183 silly resolved      { type: 'git',
+183 silly resolved        url: 'https://github.com/visionmedia/node-cookie-signature.git' },
+183 silly resolved     dependencies: {},
+183 silly resolved     devDependencies: { mocha: '*', should: '*' },
+183 silly resolved     scripts: { test: 'mocha --require should --reporter spec' },
+183 silly resolved     main: 'index',
+183 silly resolved     gitHead: '391b56cf44d88c493491b7e3fc53208cfb976d2a',
+183 silly resolved     bugs: { url: 'https://github.com/visionmedia/node-cookie-signature/issues' },
+183 silly resolved     homepage: 'https://github.com/visionmedia/node-cookie-signature',
+183 silly resolved     _id: 'cookie-signature@1.0.6',
+183 silly resolved     _shasum: 'e303a882b342cc3ee8ca513a79999734dab3ae2c',
+183 silly resolved     _from: 'cookie-signature@1.0.6',
+183 silly resolved     _npmVersion: '2.3.0',
+183 silly resolved     _nodeVersion: '0.10.36',
+183 silly resolved     _npmUser: { name: 'natevw', email: 'natevw@yahoo.com' },
+183 silly resolved     maintainers: [ [Object], [Object] ],
+183 silly resolved     dist:
+183 silly resolved      { shasum: 'e303a882b342cc3ee8ca513a79999734dab3ae2c',
+183 silly resolved        tarball: 'https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz' },
+183 silly resolved     directories: {},
+183 silly resolved     _resolved: 'https://registry.npmjs.org/cookie-signature/-/cookie-signature-1.0.6.tgz',
+183 silly resolved     readme: 'ERROR: No README data found!' },
+183 silly resolved   { name: 'csrf',
+183 silly resolved     description: 'primary logic behind csrf tokens',
+183 silly resolved     version: '3.0.6',
+183 silly resolved     author:
+183 silly resolved      { name: 'Jonathan Ong',
+183 silly resolved        email: 'me@jongleberry.com',
+183 silly resolved        url: 'http://jongleberry.com' },
+183 silly resolved     contributors: [ [Object] ],
+183 silly resolved     license: 'MIT',
+183 silly resolved     repository: { type: 'git', url: 'git+https://github.com/pillarjs/csrf.git' },
+183 silly resolved     dependencies: { rndm: '1.2.0', tsscmp: '1.0.5', 'uid-safe': '2.1.4' },
+183 silly resolved     devDependencies:
+183 silly resolved      { bluebird: '3.5.0',
+183 silly resolved        eslint: '3.17.1',
+183 silly resolved        'eslint-config-standard': '7.0.1',
+183 silly resolved        'eslint-plugin-markdown': '1.0.0-beta.4',
+183 silly resolved        'eslint-plugin-promise': '3.5.0',
+183 silly resolved        'eslint-plugin-standard': '2.1.1',
+183 silly resolved        istanbul: '0.4.5',
+183 silly resolved        mocha: '2.5.3' },
+183 silly resolved     files: [ 'LICENSE', 'HISTORY.md', 'README.md', 'index.js' ],
+183 silly resolved     engines: { node: '>= 0.8' },
+183 silly resolved     scripts:
+183 silly resolved      { lint: 'eslint --plugin markdown --ext js,md .',
+183 silly resolved        test: 'mocha --trace-deprecation --reporter spec --bail --check-leaks test/',
+183 silly resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --trace-deprecation --reporter dot --check-leaks test/',
+183 silly resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --trace-deprecation --reporter spec --check-leaks test/' },
+183 silly resolved     keywords: [ 'csrf', 'tokens' ],
+183 silly resolved     gitHead: '018ec746e8ce5dea10dda78a2480a0a9e756f1a8',
+183 silly resolved     bugs: { url: 'https://github.com/pillarjs/csrf/issues' },
+183 silly resolved     homepage: 'https://github.com/pillarjs/csrf#readme',
+183 silly resolved     _id: 'csrf@3.0.6',
+183 silly resolved     _shasum: 'b61120ddceeafc91e76ed5313bb5c0b2667b710a',
+183 silly resolved     _from: 'csrf@~3.0.3',
+183 silly resolved     _npmVersion: '2.15.11',
+183 silly resolved     _nodeVersion: '4.7.3',
+183 silly resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+183 silly resolved     dist:
+183 silly resolved      { shasum: 'b61120ddceeafc91e76ed5313bb5c0b2667b710a',
+183 silly resolved        tarball: 'https://registry.npmjs.org/csrf/-/csrf-3.0.6.tgz' },
+183 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+183 silly resolved     _npmOperationalInternal:
+183 silly resolved      { host: 'packages-18-east.internal.npmjs.com',
+183 silly resolved        tmp: 'tmp/csrf-3.0.6.tgz_1489549463230_0.9222420507576317' },
+183 silly resolved     directories: {},
+183 silly resolved     _resolved: 'https://registry.npmjs.org/csrf/-/csrf-3.0.6.tgz',
+183 silly resolved     readme: 'ERROR: No README data found!' },
+183 silly resolved   { name: 'http-errors',
+183 silly resolved     description: 'Create HTTP error objects',
+183 silly resolved     version: '1.5.1',
+183 silly resolved     author:
+183 silly resolved      { name: 'Jonathan Ong',
+183 silly resolved        email: 'me@jongleberry.com',
+183 silly resolved        url: 'http://jongleberry.com' },
+183 silly resolved     contributors: [ [Object], [Object] ],
+183 silly resolved     license: 'MIT',
+183 silly resolved     repository: { type: 'git', url: 'https://github.com/jshttp/http-errors' },
+183 silly resolved     dependencies:
+183 silly resolved      { inherits: '2.0.3',
+183 silly resolved        setprototypeof: '1.0.2',
+183 silly resolved        statuses: '>= 1.3.1 < 2' },
+183 silly resolved     devDependencies:
+183 silly resolved      { eslint: '3.10.2',
+183 silly resolved        'eslint-config-standard': '6.2.1',
+183 silly resolved        'eslint-plugin-markdown': '1.0.0-beta.3',
+183 silly resolved        'eslint-plugin-promise': '3.3.2',
+183 silly resolved        'eslint-plugin-standard': '2.0.1',
+183 silly resolved        istanbul: '0.4.5',
+183 silly resolved        mocha: '1.21.5' },
+183 silly resolved     engines: { node: '>= 0.6' },
+183 silly resolved     scripts:
+183 silly resolved      { lint: 'eslint --plugin markdown --ext js,md .',
+183 silly resolved        test: 'mocha --reporter spec --bail',
+183 silly resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot',
+183 silly resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot' },
+183 silly resolved     keywords: [ 'http', 'error' ],
+183 silly resolved     files: [ 'index.js', 'HISTORY.md', 'LICENSE', 'README.md' ],
+183 silly resolved     gitHead: 'a55db90c7a2c0bafedb4bfa35a85eee5f53a37e9',
+183 silly resolved     bugs: { url: 'https://github.com/jshttp/http-errors/issues' },
+183 silly resolved     homepage: 'https://github.com/jshttp/http-errors',
+183 silly resolved     _id: 'http-errors@1.5.1',
+183 silly resolved     _shasum: '788c0d2c1de2c81b9e6e8c01843b6b97eb920750',
+183 silly resolved     _from: 'http-errors@~1.5.0',
+183 silly resolved     _npmVersion: '1.4.28',
+183 silly resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+183 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+183 silly resolved     dist:
+183 silly resolved      { shasum: '788c0d2c1de2c81b9e6e8c01843b6b97eb920750',
+183 silly resolved        tarball: 'https://registry.npmjs.org/http-errors/-/http-errors-1.5.1.tgz' },
+183 silly resolved     _npmOperationalInternal:
+183 silly resolved      { host: 'packages-18-east.internal.npmjs.com',
+183 silly resolved        tmp: 'tmp/http-errors-1.5.1.tgz_1479361411507_0.47469806275330484' },
+183 silly resolved     directories: {},
+183 silly resolved     _resolved: 'https://registry.npmjs.org/http-errors/-/http-errors-1.5.1.tgz',
+183 silly resolved     readme: 'ERROR: No README data found!' } ]
+184 info install cookie@0.3.1 into /vol/home/knormand/security_lab/node_modules/csurf
+185 info install cookie-signature@1.0.6 into /vol/home/knormand/security_lab/node_modules/csurf
+186 info install csrf@3.0.6 into /vol/home/knormand/security_lab/node_modules/csurf
+187 info install http-errors@1.5.1 into /vol/home/knormand/security_lab/node_modules/csurf
+188 info installOne cookie@0.3.1
+189 info installOne cookie-signature@1.0.6
+190 info installOne csrf@3.0.6
+191 info installOne http-errors@1.5.1
+192 verbose node_modules/csurf/node_modules/cookie unbuild
+193 verbose node_modules/csurf/node_modules/cookie-signature unbuild
+194 verbose node_modules/csurf/node_modules/csrf unbuild
+195 verbose node_modules/csurf/node_modules/http-errors unbuild
+196 verbose tar unpack /home/knormand/.npm/cookie/0.3.1/package.tgz
+197 silly lockFile 7b657385-odules-csurf-node-modules-cookie tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/cookie
+198 verbose lock tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/cookie /home/knormand/.npm/7b657385-odules-csurf-node-modules-cookie.lock
+199 silly lockFile 8cbd5895-and-npm-cookie-0-3-1-package-tgz tar:///home/knormand/.npm/cookie/0.3.1/package.tgz
+200 verbose lock tar:///home/knormand/.npm/cookie/0.3.1/package.tgz /home/knormand/.npm/8cbd5895-and-npm-cookie-0-3-1-package-tgz.lock
+201 verbose tar unpack /home/knormand/.npm/cookie-signature/1.0.6/package.tgz
+202 silly lockFile 372e8f71-rf-node-modules-cookie-signature tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/cookie-signature
+203 verbose lock tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/cookie-signature /home/knormand/.npm/372e8f71-rf-node-modules-cookie-signature.lock
+204 silly lockFile bcd35ff7-okie-signature-1-0-6-package-tgz tar:///home/knormand/.npm/cookie-signature/1.0.6/package.tgz
+205 verbose lock tar:///home/knormand/.npm/cookie-signature/1.0.6/package.tgz /home/knormand/.npm/bcd35ff7-okie-signature-1-0-6-package-tgz.lock
+206 verbose tar unpack /home/knormand/.npm/csrf/3.0.6/package.tgz
+207 silly lockFile a29506c4--modules-csurf-node-modules-csrf tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf
+208 verbose lock tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf /home/knormand/.npm/a29506c4--modules-csurf-node-modules-csrf.lock
+209 silly lockFile 57eb7344-rmand-npm-csrf-3-0-6-package-tgz tar:///home/knormand/.npm/csrf/3.0.6/package.tgz
+210 verbose lock tar:///home/knormand/.npm/csrf/3.0.6/package.tgz /home/knormand/.npm/57eb7344-rmand-npm-csrf-3-0-6-package-tgz.lock
+211 verbose tar unpack /home/knormand/.npm/http-errors/1.5.1/package.tgz
+212 silly lockFile 9d67a5ba-s-csurf-node-modules-http-errors tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors
+213 verbose lock tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors /home/knormand/.npm/9d67a5ba-s-csurf-node-modules-http-errors.lock
+214 silly lockFile 8e79e5dc-pm-http-errors-1-5-1-package-tgz tar:///home/knormand/.npm/http-errors/1.5.1/package.tgz
+215 verbose lock tar:///home/knormand/.npm/http-errors/1.5.1/package.tgz /home/knormand/.npm/8e79e5dc-pm-http-errors-1-5-1-package-tgz.lock
+216 silly gunzTarPerm modes [ '755', '644' ]
+217 silly gunzTarPerm modes [ '755', '644' ]
+218 silly gunzTarPerm modes [ '755', '644' ]
+219 silly gunzTarPerm extractEntry package.json
+220 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+221 silly gunzTarPerm extractEntry package.json
+222 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+223 silly gunzTarPerm modes [ '755', '644' ]
+224 silly gunzTarPerm extractEntry package.json
+225 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+226 silly gunzTarPerm extractEntry package.json
+227 silly gunzTarPerm extractEntry README.md
+228 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+229 silly gunzTarPerm extractEntry LICENSE
+230 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+231 silly gunzTarPerm extractEntry README.md
+232 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+233 silly gunzTarPerm extractEntry LICENSE
+234 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+235 silly gunzTarPerm extractEntry README.md
+236 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+237 silly gunzTarPerm extractEntry LICENSE
+238 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+239 silly gunzTarPerm extractEntry .npmignore
+240 silly gunzTarPerm extractEntry index.js
+241 silly gunzTarPerm extractEntry index.js
+242 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+243 silly gunzTarPerm extractEntry HISTORY.md
+244 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+245 silly gunzTarPerm extractEntry index.js
+246 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+247 silly gunzTarPerm extractEntry HISTORY.md
+248 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+249 silly gunzTarPerm extractEntry index.js
+250 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+251 silly gunzTarPerm extractEntry HISTORY.md
+252 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+253 silly gunzTarPerm extractEntry History.md
+254 silly gunzTarPerm extractEntry Readme.md
+255 silly lockFile 9d67a5ba-s-csurf-node-modules-http-errors tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors
+256 silly lockFile 9d67a5ba-s-csurf-node-modules-http-errors tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors
+257 silly lockFile a29506c4--modules-csurf-node-modules-csrf tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf
+258 silly lockFile a29506c4--modules-csurf-node-modules-csrf tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf
+259 silly lockFile 372e8f71-rf-node-modules-cookie-signature tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/cookie-signature
+260 silly lockFile 372e8f71-rf-node-modules-cookie-signature tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/cookie-signature
+261 silly lockFile 8e79e5dc-pm-http-errors-1-5-1-package-tgz tar:///home/knormand/.npm/http-errors/1.5.1/package.tgz
+262 silly lockFile 8e79e5dc-pm-http-errors-1-5-1-package-tgz tar:///home/knormand/.npm/http-errors/1.5.1/package.tgz
+263 silly lockFile 7b657385-odules-csurf-node-modules-cookie tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/cookie
+264 silly lockFile 7b657385-odules-csurf-node-modules-cookie tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/cookie
+265 silly lockFile 57eb7344-rmand-npm-csrf-3-0-6-package-tgz tar:///home/knormand/.npm/csrf/3.0.6/package.tgz
+266 silly lockFile 57eb7344-rmand-npm-csrf-3-0-6-package-tgz tar:///home/knormand/.npm/csrf/3.0.6/package.tgz
+267 silly lockFile bcd35ff7-okie-signature-1-0-6-package-tgz tar:///home/knormand/.npm/cookie-signature/1.0.6/package.tgz
+268 silly lockFile bcd35ff7-okie-signature-1-0-6-package-tgz tar:///home/knormand/.npm/cookie-signature/1.0.6/package.tgz
+269 silly lockFile 8cbd5895-and-npm-cookie-0-3-1-package-tgz tar:///home/knormand/.npm/cookie/0.3.1/package.tgz
+270 silly lockFile 8cbd5895-and-npm-cookie-0-3-1-package-tgz tar:///home/knormand/.npm/cookie/0.3.1/package.tgz
+271 info preinstall http-errors@1.5.1
+272 verbose readDependencies using package.json deps
+273 verbose readDependencies using package.json deps
+274 verbose cache add [ 'inherits@2.0.3', null ]
+275 verbose cache add name=undefined spec="inherits@2.0.3" args=["inherits@2.0.3",null]
+276 verbose parsed url { protocol: null,
+276 verbose parsed url   slashes: null,
+276 verbose parsed url   auth: null,
+276 verbose parsed url   host: null,
+276 verbose parsed url   port: null,
+276 verbose parsed url   hostname: null,
+276 verbose parsed url   hash: null,
+276 verbose parsed url   search: null,
+276 verbose parsed url   query: null,
+276 verbose parsed url   pathname: 'inherits@2.0.3',
+276 verbose parsed url   path: 'inherits@2.0.3',
+276 verbose parsed url   href: 'inherits@2.0.3' }
+277 verbose cache add [ 'setprototypeof@1.0.2', null ]
+278 verbose cache add name=undefined spec="setprototypeof@1.0.2" args=["setprototypeof@1.0.2",null]
+279 verbose parsed url { protocol: null,
+279 verbose parsed url   slashes: null,
+279 verbose parsed url   auth: null,
+279 verbose parsed url   host: null,
+279 verbose parsed url   port: null,
+279 verbose parsed url   hostname: null,
+279 verbose parsed url   hash: null,
+279 verbose parsed url   search: null,
+279 verbose parsed url   query: null,
+279 verbose parsed url   pathname: 'setprototypeof@1.0.2',
+279 verbose parsed url   path: 'setprototypeof@1.0.2',
+279 verbose parsed url   href: 'setprototypeof@1.0.2' }
+280 verbose cache add name="inherits" spec="2.0.3" args=["inherits","2.0.3"]
+281 verbose parsed url { protocol: null,
+281 verbose parsed url   slashes: null,
+281 verbose parsed url   auth: null,
+281 verbose parsed url   host: null,
+281 verbose parsed url   port: null,
+281 verbose parsed url   hostname: null,
+281 verbose parsed url   hash: null,
+281 verbose parsed url   search: null,
+281 verbose parsed url   query: null,
+281 verbose parsed url   pathname: '2.0.3',
+281 verbose parsed url   path: '2.0.3',
+281 verbose parsed url   href: '2.0.3' }
+282 verbose addNamed [ 'inherits', '2.0.3' ]
+283 verbose addNamed [ '2.0.3', '2.0.3' ]
+284 silly lockFile 92ff4e28-inherits-2-0-3 inherits@2.0.3
+285 verbose lock inherits@2.0.3 /home/knormand/.npm/92ff4e28-inherits-2-0-3.lock
+286 verbose cache add [ 'statuses@>= 1.3.1 < 2', null ]
+287 verbose cache add name=undefined spec="statuses@>= 1.3.1 < 2" args=["statuses@>= 1.3.1 < 2",null]
+288 verbose parsed url { protocol: null,
+288 verbose parsed url   slashes: null,
+288 verbose parsed url   auth: null,
+288 verbose parsed url   host: null,
+288 verbose parsed url   port: null,
+288 verbose parsed url   hostname: null,
+288 verbose parsed url   hash: null,
+288 verbose parsed url   search: null,
+288 verbose parsed url   query: null,
+288 verbose parsed url   pathname: 'statuses@%3E=%201.3.1%20%3C%202',
+288 verbose parsed url   path: 'statuses@%3E=%201.3.1%20%3C%202',
+288 verbose parsed url   href: 'statuses@%3E=%201.3.1%20%3C%202' }
+289 verbose cache add name="setprototypeof" spec="1.0.2" args=["setprototypeof","1.0.2"]
+290 verbose parsed url { protocol: null,
+290 verbose parsed url   slashes: null,
+290 verbose parsed url   auth: null,
+290 verbose parsed url   host: null,
+290 verbose parsed url   port: null,
+290 verbose parsed url   hostname: null,
+290 verbose parsed url   hash: null,
+290 verbose parsed url   search: null,
+290 verbose parsed url   query: null,
+290 verbose parsed url   pathname: '1.0.2',
+290 verbose parsed url   path: '1.0.2',
+290 verbose parsed url   href: '1.0.2' }
+291 verbose addNamed [ 'setprototypeof', '1.0.2' ]
+292 verbose addNamed [ '1.0.2', '1.0.2' ]
+293 silly lockFile 3fc5a288-setprototypeof-1-0-2 setprototypeof@1.0.2
+294 verbose lock setprototypeof@1.0.2 /home/knormand/.npm/3fc5a288-setprototypeof-1-0-2.lock
+295 verbose cache add name="statuses" spec=">= 1.3.1 < 2" args=["statuses",">= 1.3.1 < 2"]
+296 verbose parsed url { protocol: null,
+296 verbose parsed url   slashes: null,
+296 verbose parsed url   auth: null,
+296 verbose parsed url   host: null,
+296 verbose parsed url   port: null,
+296 verbose parsed url   hostname: null,
+296 verbose parsed url   hash: null,
+296 verbose parsed url   search: null,
+296 verbose parsed url   query: null,
+296 verbose parsed url   pathname: '%3E=%201.3.1%20%3C%202',
+296 verbose parsed url   path: '%3E=%201.3.1%20%3C%202',
+296 verbose parsed url   href: '%3E=%201.3.1%20%3C%202' }
+297 verbose addNamed [ 'statuses', '>= 1.3.1 < 2' ]
+298 verbose addNamed [ null, '>=1.3.1 <2.0.0-0' ]
+299 silly lockFile 3ca0e1ec-statuses-1-3-1-2 statuses@>= 1.3.1 < 2
+300 verbose lock statuses@>= 1.3.1 < 2 /home/knormand/.npm/3ca0e1ec-statuses-1-3-1-2.lock
+301 info preinstall cookie-signature@1.0.6
+302 info preinstall csrf@3.0.6
+303 info preinstall cookie@0.3.1
+304 verbose readDependencies using package.json deps
+305 verbose readDependencies using package.json deps
+306 verbose readDependencies using package.json deps
+307 verbose readDependencies using package.json deps
+308 silly resolved []
+309 verbose about to build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/cookie-signature
+310 info build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/cookie-signature
+311 verbose linkStuff [ false,
+311 verbose linkStuff   false,
+311 verbose linkStuff   false,
+311 verbose linkStuff   '/vol/home/knormand/security_lab/node_modules/csurf/node_modules' ]
+312 info linkStuff cookie-signature@1.0.6
+313 verbose linkBins cookie-signature@1.0.6
+314 verbose linkMans cookie-signature@1.0.6
+315 verbose rebuildBundles cookie-signature@1.0.6
+316 verbose readDependencies using package.json deps
+317 verbose readDependencies using package.json deps
+318 silly resolved []
+319 verbose about to build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/cookie
+320 info build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/cookie
+321 verbose linkStuff [ false,
+321 verbose linkStuff   false,
+321 verbose linkStuff   false,
+321 verbose linkStuff   '/vol/home/knormand/security_lab/node_modules/csurf/node_modules' ]
+322 info linkStuff cookie@0.3.1
+323 verbose linkBins cookie@0.3.1
+324 verbose linkMans cookie@0.3.1
+325 verbose rebuildBundles cookie@0.3.1
+326 info install cookie-signature@1.0.6
+327 info install cookie@0.3.1
+328 silly addNameRange { name: 'statuses', range: '>=1.3.1 <2.0.0-0', hasData: false }
+329 verbose cache add [ 'uid-safe@2.1.4', null ]
+330 verbose cache add name=undefined spec="uid-safe@2.1.4" args=["uid-safe@2.1.4",null]
+331 verbose parsed url { protocol: null,
+331 verbose parsed url   slashes: null,
+331 verbose parsed url   auth: null,
+331 verbose parsed url   host: null,
+331 verbose parsed url   port: null,
+331 verbose parsed url   hostname: null,
+331 verbose parsed url   hash: null,
+331 verbose parsed url   search: null,
+331 verbose parsed url   query: null,
+331 verbose parsed url   pathname: 'uid-safe@2.1.4',
+331 verbose parsed url   path: 'uid-safe@2.1.4',
+331 verbose parsed url   href: 'uid-safe@2.1.4' }
+332 info postinstall cookie-signature@1.0.6
+333 verbose cache add name="uid-safe" spec="2.1.4" args=["uid-safe","2.1.4"]
+334 verbose parsed url { protocol: null,
+334 verbose parsed url   slashes: null,
+334 verbose parsed url   auth: null,
+334 verbose parsed url   host: null,
+334 verbose parsed url   port: null,
+334 verbose parsed url   hostname: null,
+334 verbose parsed url   hash: null,
+334 verbose parsed url   search: null,
+334 verbose parsed url   query: null,
+334 verbose parsed url   pathname: '2.1.4',
+334 verbose parsed url   path: '2.1.4',
+334 verbose parsed url   href: '2.1.4' }
+335 verbose addNamed [ 'uid-safe', '2.1.4' ]
+336 verbose addNamed [ '2.1.4', '2.1.4' ]
+337 silly lockFile c15309b9-uid-safe-2-1-4 uid-safe@2.1.4
+338 verbose lock uid-safe@2.1.4 /home/knormand/.npm/c15309b9-uid-safe-2-1-4.lock
+339 verbose cache add [ 'rndm@1.2.0', null ]
+340 verbose cache add name=undefined spec="rndm@1.2.0" args=["rndm@1.2.0",null]
+341 verbose parsed url { protocol: null,
+341 verbose parsed url   slashes: null,
+341 verbose parsed url   auth: null,
+341 verbose parsed url   host: null,
+341 verbose parsed url   port: null,
+341 verbose parsed url   hostname: null,
+341 verbose parsed url   hash: null,
+341 verbose parsed url   search: null,
+341 verbose parsed url   query: null,
+341 verbose parsed url   pathname: 'rndm@1.2.0',
+341 verbose parsed url   path: 'rndm@1.2.0',
+341 verbose parsed url   href: 'rndm@1.2.0' }
+342 info postinstall cookie@0.3.1
+343 verbose cache add name="rndm" spec="1.2.0" args=["rndm","1.2.0"]
+344 verbose parsed url { protocol: null,
+344 verbose parsed url   slashes: null,
+344 verbose parsed url   auth: null,
+344 verbose parsed url   host: null,
+344 verbose parsed url   port: null,
+344 verbose parsed url   hostname: null,
+344 verbose parsed url   hash: null,
+344 verbose parsed url   search: null,
+344 verbose parsed url   query: null,
+344 verbose parsed url   pathname: '1.2.0',
+344 verbose parsed url   path: '1.2.0',
+344 verbose parsed url   href: '1.2.0' }
+345 verbose addNamed [ 'rndm', '1.2.0' ]
+346 verbose addNamed [ '1.2.0', '1.2.0' ]
+347 silly lockFile a4b4d23f-rndm-1-2-0 rndm@1.2.0
+348 verbose lock rndm@1.2.0 /home/knormand/.npm/a4b4d23f-rndm-1-2-0.lock
+349 verbose cache add [ 'tsscmp@1.0.5', null ]
+350 verbose cache add name=undefined spec="tsscmp@1.0.5" args=["tsscmp@1.0.5",null]
+351 verbose parsed url { protocol: null,
+351 verbose parsed url   slashes: null,
+351 verbose parsed url   auth: null,
+351 verbose parsed url   host: null,
+351 verbose parsed url   port: null,
+351 verbose parsed url   hostname: null,
+351 verbose parsed url   hash: null,
+351 verbose parsed url   search: null,
+351 verbose parsed url   query: null,
+351 verbose parsed url   pathname: 'tsscmp@1.0.5',
+351 verbose parsed url   path: 'tsscmp@1.0.5',
+351 verbose parsed url   href: 'tsscmp@1.0.5' }
+352 verbose cache add name="tsscmp" spec="1.0.5" args=["tsscmp","1.0.5"]
+353 verbose parsed url { protocol: null,
+353 verbose parsed url   slashes: null,
+353 verbose parsed url   auth: null,
+353 verbose parsed url   host: null,
+353 verbose parsed url   port: null,
+353 verbose parsed url   hostname: null,
+353 verbose parsed url   hash: null,
+353 verbose parsed url   search: null,
+353 verbose parsed url   query: null,
+353 verbose parsed url   pathname: '1.0.5',
+353 verbose parsed url   path: '1.0.5',
+353 verbose parsed url   href: '1.0.5' }
+354 verbose addNamed [ 'tsscmp', '1.0.5' ]
+355 verbose addNamed [ '1.0.5', '1.0.5' ]
+356 silly lockFile 4811aa50-tsscmp-1-0-5 tsscmp@1.0.5
+357 verbose lock tsscmp@1.0.5 /home/knormand/.npm/4811aa50-tsscmp-1-0-5.lock
+358 verbose request where is /inherits
+359 verbose request registry https://registry.npmjs.org/
+360 verbose url raw /inherits
+361 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+362 verbose url resolved https://registry.npmjs.org/inherits
+363 verbose request where is https://registry.npmjs.org/inherits
+364 info trying registry request attempt 1 at 10:08:46
+365 verbose etag "5a8b25af-2289"
+366 http GET https://registry.npmjs.org/inherits
+367 verbose request where is /setprototypeof
+368 verbose request registry https://registry.npmjs.org/
+369 verbose url raw /setprototypeof
+370 verbose url resolving [ 'https://registry.npmjs.org/', './setprototypeof' ]
+371 verbose url resolved https://registry.npmjs.org/setprototypeof
+372 verbose request where is https://registry.npmjs.org/setprototypeof
+373 info trying registry request attempt 1 at 10:08:46
+374 verbose etag "59b9c440-1b7b"
+375 http GET https://registry.npmjs.org/setprototypeof
+376 verbose request where is /statuses
+377 verbose request registry https://registry.npmjs.org/
+378 verbose url raw /statuses
+379 verbose url resolving [ 'https://registry.npmjs.org/', './statuses' ]
+380 verbose url resolved https://registry.npmjs.org/statuses
+381 verbose request where is https://registry.npmjs.org/statuses
+382 info trying registry request attempt 1 at 10:08:46
+383 verbose etag "5abaf336-5f67"
+384 http GET https://registry.npmjs.org/statuses
+385 verbose request where is /rndm
+386 verbose request registry https://registry.npmjs.org/
+387 verbose url raw /rndm
+388 verbose url resolving [ 'https://registry.npmjs.org/', './rndm' ]
+389 verbose url resolved https://registry.npmjs.org/rndm
+390 verbose request where is https://registry.npmjs.org/rndm
+391 info trying registry request attempt 1 at 10:08:46
+392 verbose etag "5922f721-1905"
+393 http GET https://registry.npmjs.org/rndm
+394 verbose request where is /uid-safe
+395 verbose request registry https://registry.npmjs.org/
+396 verbose url raw /uid-safe
+397 verbose url resolving [ 'https://registry.npmjs.org/', './uid-safe' ]
+398 verbose url resolved https://registry.npmjs.org/uid-safe
+399 verbose request where is https://registry.npmjs.org/uid-safe
+400 info trying registry request attempt 1 at 10:08:46
+401 verbose etag "5aaab9d6-5ce8"
+402 http GET https://registry.npmjs.org/uid-safe
+403 verbose request where is /tsscmp
+404 verbose request registry https://registry.npmjs.org/
+405 verbose url raw /tsscmp
+406 verbose url resolving [ 'https://registry.npmjs.org/', './tsscmp' ]
+407 verbose url resolved https://registry.npmjs.org/tsscmp
+408 verbose request where is https://registry.npmjs.org/tsscmp
+409 info trying registry request attempt 1 at 10:08:46
+410 verbose etag "598b275c-2465"
+411 http GET https://registry.npmjs.org/tsscmp
+412 http 304 https://registry.npmjs.org/inherits
+413 silly registry.get cb [ 304,
+413 silly registry.get   { date: 'Mon, 16 Apr 2018 14:08:46 GMT',
+413 silly registry.get     via: '1.1 varnish',
+413 silly registry.get     'cache-control': 'max-age=300',
+413 silly registry.get     etag: '"5a8b25af-2289"',
+413 silly registry.get     age: '2276',
+413 silly registry.get     connection: 'keep-alive',
+413 silly registry.get     'x-served-by': 'cache-bos8223-BOS',
+413 silly registry.get     'x-cache': 'HIT',
+413 silly registry.get     'x-cache-hits': '20',
+413 silly registry.get     'x-timer': 'S1523887727.765818,VS0,VE0',
+413 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+414 verbose etag https://registry.npmjs.org/inherits from cache
+415 http 304 https://registry.npmjs.org/tsscmp
+416 silly registry.get cb [ 304,
+416 silly registry.get   { date: 'Mon, 16 Apr 2018 14:08:46 GMT',
+416 silly registry.get     via: '1.1 varnish',
+416 silly registry.get     'cache-control': 'max-age=300',
+416 silly registry.get     etag: '"598b275c-2465"',
+416 silly registry.get     age: '4973',
+416 silly registry.get     connection: 'keep-alive',
+416 silly registry.get     'x-served-by': 'cache-bos8223-BOS',
+416 silly registry.get     'x-cache': 'HIT',
+416 silly registry.get     'x-cache-hits': '1',
+416 silly registry.get     'x-timer': 'S1523887727.770621,VS0,VE0',
+416 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+417 verbose etag https://registry.npmjs.org/tsscmp from cache
+418 http 304 https://registry.npmjs.org/setprototypeof
+419 silly registry.get cb [ 304,
+419 silly registry.get   { date: 'Mon, 16 Apr 2018 14:08:46 GMT',
+419 silly registry.get     via: '1.1 varnish',
+419 silly registry.get     'cache-control': 'max-age=300',
+419 silly registry.get     etag: '"59b9c440-1b7b"',
+419 silly registry.get     age: '14052',
+419 silly registry.get     connection: 'keep-alive',
+419 silly registry.get     'x-served-by': 'cache-bos8232-BOS',
+419 silly registry.get     'x-cache': 'HIT',
+419 silly registry.get     'x-cache-hits': '1',
+419 silly registry.get     'x-timer': 'S1523887727.771651,VS0,VE0',
+419 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+420 verbose etag https://registry.npmjs.org/setprototypeof from cache
+421 http 304 https://registry.npmjs.org/statuses
+422 silly registry.get cb [ 304,
+422 silly registry.get   { date: 'Mon, 16 Apr 2018 14:08:46 GMT',
+422 silly registry.get     via: '1.1 varnish',
+422 silly registry.get     'cache-control': 'max-age=300',
+422 silly registry.get     etag: '"5abaf336-5f67"',
+422 silly registry.get     age: '5558',
+422 silly registry.get     connection: 'keep-alive',
+422 silly registry.get     'x-served-by': 'cache-bos8227-BOS',
+422 silly registry.get     'x-cache': 'HIT',
+422 silly registry.get     'x-cache-hits': '2',
+422 silly registry.get     'x-timer': 'S1523887727.774959,VS0,VE0',
+422 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+423 verbose etag https://registry.npmjs.org/statuses from cache
+424 http 304 https://registry.npmjs.org/rndm
+425 silly registry.get cb [ 304,
+425 silly registry.get   { date: 'Mon, 16 Apr 2018 14:08:46 GMT',
+425 silly registry.get     via: '1.1 varnish',
+425 silly registry.get     'cache-control': 'max-age=300',
+425 silly registry.get     etag: '"5922f721-1905"',
+425 silly registry.get     age: '5647',
+425 silly registry.get     connection: 'keep-alive',
+425 silly registry.get     'x-served-by': 'cache-bos8228-BOS',
+425 silly registry.get     'x-cache': 'HIT',
+425 silly registry.get     'x-cache-hits': '1',
+425 silly registry.get     'x-timer': 'S1523887727.779738,VS0,VE0',
+425 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+426 verbose etag https://registry.npmjs.org/rndm from cache
+427 http 304 https://registry.npmjs.org/uid-safe
+428 silly registry.get cb [ 304,
+428 silly registry.get   { date: 'Mon, 16 Apr 2018 14:08:46 GMT',
+428 silly registry.get     via: '1.1 varnish',
+428 silly registry.get     'cache-control': 'max-age=300',
+428 silly registry.get     etag: '"5aaab9d6-5ce8"',
+428 silly registry.get     age: '1953',
+428 silly registry.get     connection: 'keep-alive',
+428 silly registry.get     'x-served-by': 'cache-bos8220-BOS',
+428 silly registry.get     'x-cache': 'HIT',
+428 silly registry.get     'x-cache-hits': '1',
+428 silly registry.get     'x-timer': 'S1523887727.789295,VS0,VE0',
+428 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+429 verbose etag https://registry.npmjs.org/uid-safe from cache
+430 silly addNameRange number 2 { name: 'statuses', range: '>=1.3.1 <2.0.0-0', hasData: true }
+431 silly addNameRange versions [ 'statuses',
+431 silly addNameRange   [ '1.0.1',
+431 silly addNameRange     '1.0.2',
+431 silly addNameRange     '1.0.3',
+431 silly addNameRange     '1.0.4',
+431 silly addNameRange     '1.1.0',
+431 silly addNameRange     '1.1.1',
+431 silly addNameRange     '1.2.0',
+431 silly addNameRange     '1.2.1',
+431 silly addNameRange     '1.3.0',
+431 silly addNameRange     '1.3.1',
+431 silly addNameRange     '1.4.0',
+431 silly addNameRange     '1.5.0' ] ]
+432 verbose addNamed [ 'statuses', '1.5.0' ]
+433 verbose addNamed [ '1.5.0', '1.5.0' ]
+434 silly lockFile ccfc8273-statuses-1-5-0 statuses@1.5.0
+435 verbose lock statuses@1.5.0 /home/knormand/.npm/ccfc8273-statuses-1-5-0.lock
+436 silly lockFile 92ff4e28-inherits-2-0-3 inherits@2.0.3
+437 silly lockFile 92ff4e28-inherits-2-0-3 inherits@2.0.3
+438 silly lockFile 4811aa50-tsscmp-1-0-5 tsscmp@1.0.5
+439 silly lockFile 4811aa50-tsscmp-1-0-5 tsscmp@1.0.5
+440 silly lockFile 3fc5a288-setprototypeof-1-0-2 setprototypeof@1.0.2
+441 silly lockFile 3fc5a288-setprototypeof-1-0-2 setprototypeof@1.0.2
+442 silly lockFile a4b4d23f-rndm-1-2-0 rndm@1.2.0
+443 silly lockFile a4b4d23f-rndm-1-2-0 rndm@1.2.0
+444 silly lockFile ccfc8273-statuses-1-5-0 statuses@1.5.0
+445 silly lockFile ccfc8273-statuses-1-5-0 statuses@1.5.0
+446 silly lockFile 3ca0e1ec-statuses-1-3-1-2 statuses@>= 1.3.1 < 2
+447 silly lockFile 3ca0e1ec-statuses-1-3-1-2 statuses@>= 1.3.1 < 2
+448 silly lockFile c15309b9-uid-safe-2-1-4 uid-safe@2.1.4
+449 silly lockFile c15309b9-uid-safe-2-1-4 uid-safe@2.1.4
+450 silly resolved [ { name: 'inherits',
+450 silly resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+450 silly resolved     version: '2.0.3',
+450 silly resolved     keywords:
+450 silly resolved      [ 'inheritance',
+450 silly resolved        'class',
+450 silly resolved        'klass',
+450 silly resolved        'oop',
+450 silly resolved        'object-oriented',
+450 silly resolved        'inherits',
+450 silly resolved        'browser',
+450 silly resolved        'browserify' ],
+450 silly resolved     main: './inherits.js',
+450 silly resolved     browser: './inherits_browser.js',
+450 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits.git' },
+450 silly resolved     license: 'ISC',
+450 silly resolved     scripts: { test: 'node test' },
+450 silly resolved     devDependencies: { tap: '^7.1.0' },
+450 silly resolved     files: [ 'inherits.js', 'inherits_browser.js' ],
+450 silly resolved     gitHead: 'e05d0fb27c61a3ec687214f0476386b765364d5f',
+450 silly resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+450 silly resolved     homepage: 'https://github.com/isaacs/inherits#readme',
+450 silly resolved     _id: 'inherits@2.0.3',
+450 silly resolved     _shasum: '633c2c83e3da42a502f52466022480f4208261de',
+450 silly resolved     _from: 'inherits@2.0.3',
+450 silly resolved     _npmVersion: '3.10.7',
+450 silly resolved     _nodeVersion: '6.5.0',
+450 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+450 silly resolved     dist:
+450 silly resolved      { shasum: '633c2c83e3da42a502f52466022480f4208261de',
+450 silly resolved        tarball: 'https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz' },
+450 silly resolved     maintainers: [ [Object] ],
+450 silly resolved     _npmOperationalInternal:
+450 silly resolved      { host: 'packages-16-east.internal.npmjs.com',
+450 silly resolved        tmp: 'tmp/inherits-2.0.3.tgz_1473295776489_0.08142363070510328' },
+450 silly resolved     directories: {},
+450 silly resolved     _resolved: 'https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz',
+450 silly resolved     readme: 'ERROR: No README data found!' },
+450 silly resolved   { name: 'setprototypeof',
+450 silly resolved     version: '1.0.2',
+450 silly resolved     description: 'A small polyfill for Object.setprototypeof',
+450 silly resolved     main: 'index.js',
+450 silly resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+450 silly resolved     repository:
+450 silly resolved      { type: 'git',
+450 silly resolved        url: 'git+https://github.com/wesleytodd/setprototypeof.git' },
+450 silly resolved     keywords: [ 'polyfill', 'object', 'setprototypeof' ],
+450 silly resolved     author: { name: 'Wes Todd' },
+450 silly resolved     license: 'ISC',
+450 silly resolved     bugs: { url: 'https://github.com/wesleytodd/setprototypeof/issues' },
+450 silly resolved     homepage: 'https://github.com/wesleytodd/setprototypeof',
+450 silly resolved     gitHead: '34da239ae7ab69b7b42791d5b928379ce51a0ff2',
+450 silly resolved     _id: 'setprototypeof@1.0.2',
+450 silly resolved     _shasum: '81a552141ec104b88e89ce383103ad5c66564d08',
+450 silly resolved     _from: 'setprototypeof@1.0.2',
+450 silly resolved     _npmVersion: '3.10.8',
+450 silly resolved     _nodeVersion: '7.0.0',
+450 silly resolved     _npmUser: { name: 'wesleytodd', email: 'wes@wesleytodd.com' },
+450 silly resolved     dist:
+450 silly resolved      { shasum: '81a552141ec104b88e89ce383103ad5c66564d08',
+450 silly resolved        tarball: 'https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.0.2.tgz' },
+450 silly resolved     maintainers: [ [Object] ],
+450 silly resolved     _npmOperationalInternal:
+450 silly resolved      { host: 'packages-12-west.internal.npmjs.com',
+450 silly resolved        tmp: 'tmp/setprototypeof-1.0.2.tgz_1479056139581_0.43114364007487893' },
+450 silly resolved     directories: {},
+450 silly resolved     _resolved: 'https://registry.npmjs.org/setprototypeof/-/setprototypeof-1.0.2.tgz',
+450 silly resolved     readme: 'ERROR: No README data found!' },
+450 silly resolved   { name: 'statuses',
+450 silly resolved     description: 'HTTP status utility',
+450 silly resolved     version: '1.5.0',
+450 silly resolved     contributors: [ [Object], [Object] ],
+450 silly resolved     repository:
+450 silly resolved      { type: 'git',
+450 silly resolved        url: 'git+https://github.com/jshttp/statuses.git' },
+450 silly resolved     license: 'MIT',
+450 silly resolved     keywords: [ 'http', 'status', 'code' ],
+450 silly resolved     files: [ 'HISTORY.md', 'index.js', 'codes.json', 'LICENSE' ],
+450 silly resolved     devDependencies:
+450 silly resolved      { 'csv-parse': '1.2.4',
+450 silly resolved        eslint: '4.19.1',
+450 silly resolved        'eslint-config-standard': '11.0.0',
+450 silly resolved        'eslint-plugin-import': '2.9.0',
+450 silly resolved        'eslint-plugin-markdown': '1.0.0-beta.6',
+450 silly resolved        'eslint-plugin-node': '6.0.1',
+450 silly resolved        'eslint-plugin-promise': '3.7.0',
+450 silly resolved        'eslint-plugin-standard': '3.0.1',
+450 silly resolved        istanbul: '0.4.5',
+450 silly resolved        mocha: '1.21.5',
+450 silly resolved        'raw-body': '2.3.2',
+450 silly resolved        'stream-to-array': '2.3.0' },
+450 silly resolved     engines: { node: '>= 0.6' },
+450 silly resolved     scripts:
+450 silly resolved      { build: 'node scripts/build.js',
+450 silly resolved        fetch: 'node scripts/fetch-apache.js && node scripts/fetch-iana.js && node scripts/fetch-nginx.js && node scripts/fetch-node.js',
+450 silly resolved        lint: 'eslint --plugin markdown --ext js,md .',
+450 silly resolved        test: 'mocha --reporter spec --check-leaks --bail test/',
+450 silly resolved        'test-ci': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/',
+450 silly resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+450 silly resolved        update: 'npm run fetch && npm run build' },
+450 silly resolved     gitHead: '4fcf6fb80ef50e8f0603b87946b0fa7868c815e7',
+450 silly resolved     bugs: { url: 'https://github.com/jshttp/statuses/issues' },
+450 silly resolved     homepage: 'https://github.com/jshttp/statuses#readme',
+450 silly resolved     _id: 'statuses@1.5.0',
+450 silly resolved     _shasum: '161c7dac177659fd9811f43771fa99381478628c',
+450 silly resolved     _from: 'statuses@>= 1.3.1 < 2',
+450 silly resolved     _npmVersion: '3.10.10',
+450 silly resolved     _nodeVersion: '6.13.1',
+450 silly resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+450 silly resolved     dist:
+450 silly resolved      { shasum: '161c7dac177659fd9811f43771fa99381478628c',
+450 silly resolved        tarball: 'https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz',
+450 silly resolved        fileCount: 6,
+450 silly resolved        unpackedSize: 11034 },
+450 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+450 silly resolved     directories: {},
+450 silly resolved     _npmOperationalInternal:
+450 silly resolved      { host: 's3://npm-registry-packages',
+450 silly resolved        tmp: 'tmp/statuses_1.5.0_1522201397898_0.27375877363523005' },
+450 silly resolved     _resolved: 'https://registry.npmjs.org/statuses/-/statuses-1.5.0.tgz',
+450 silly resolved     readme: 'ERROR: No README data found!' } ]
+451 info install inherits@2.0.3 into /vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors
+452 info install setprototypeof@1.0.2 into /vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors
+453 info install statuses@1.5.0 into /vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors
+454 info installOne inherits@2.0.3
+455 info installOne setprototypeof@1.0.2
+456 info installOne statuses@1.5.0
+457 verbose node_modules/csurf/node_modules/http-errors/node_modules/inherits unbuild
+458 verbose node_modules/csurf/node_modules/http-errors/node_modules/setprototypeof unbuild
+459 verbose node_modules/csurf/node_modules/http-errors/node_modules/statuses unbuild
+460 verbose tar unpack /home/knormand/.npm/inherits/2.0.3/package.tgz
+461 silly lockFile 139a9b1d-ttp-errors-node-modules-inherits tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/inherits
+462 verbose lock tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/inherits /home/knormand/.npm/139a9b1d-ttp-errors-node-modules-inherits.lock
+463 silly lockFile 362778ea-d-npm-inherits-2-0-3-package-tgz tar:///home/knormand/.npm/inherits/2.0.3/package.tgz
+464 verbose lock tar:///home/knormand/.npm/inherits/2.0.3/package.tgz /home/knormand/.npm/362778ea-d-npm-inherits-2-0-3-package-tgz.lock
+465 verbose tar unpack /home/knormand/.npm/setprototypeof/1.0.2/package.tgz
+466 silly lockFile a809763a-rors-node-modules-setprototypeof tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/setprototypeof
+467 verbose lock tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/setprototypeof /home/knormand/.npm/a809763a-rors-node-modules-setprototypeof.lock
+468 silly lockFile 9e3562c1-setprototypeof-1-0-2-package-tgz tar:///home/knormand/.npm/setprototypeof/1.0.2/package.tgz
+469 verbose lock tar:///home/knormand/.npm/setprototypeof/1.0.2/package.tgz /home/knormand/.npm/9e3562c1-setprototypeof-1-0-2-package-tgz.lock
+470 verbose tar unpack /home/knormand/.npm/statuses/1.5.0/package.tgz
+471 silly lockFile 52008a9b-ttp-errors-node-modules-statuses tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/statuses
+472 verbose lock tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/statuses /home/knormand/.npm/52008a9b-ttp-errors-node-modules-statuses.lock
+473 silly lockFile c0ccf834-d-npm-statuses-1-5-0-package-tgz tar:///home/knormand/.npm/statuses/1.5.0/package.tgz
+474 verbose lock tar:///home/knormand/.npm/statuses/1.5.0/package.tgz /home/knormand/.npm/c0ccf834-d-npm-statuses-1-5-0-package-tgz.lock
+475 silly resolved [ { name: 'tsscmp',
+475 silly resolved     version: '1.0.5',
+475 silly resolved     description: 'Timing safe string compare using double HMAC',
+475 silly resolved     main: 'lib/index.js',
+475 silly resolved     dependencies: {},
+475 silly resolved     devDependencies: {},
+475 silly resolved     scripts: { test: 'node test/unit && node test/benchmark' },
+475 silly resolved     repository:
+475 silly resolved      { type: 'git',
+475 silly resolved        url: 'git+https://github.com/suryagh/tsscmp.git' },
+475 silly resolved     keywords:
+475 silly resolved      [ 'timing safe string compare',
+475 silly resolved        'double hmac string compare',
+475 silly resolved        'safe string compare',
+475 silly resolved        'hmac' ],
+475 silly resolved     author: { name: 'suryagh' },
+475 silly resolved     publishConfig: { registry: 'https://registry.npmjs.org' },
+475 silly resolved     engines: { node: '>=0.6.x' },
+475 silly resolved     license: 'MIT',
+475 silly resolved     gitHead: '095fb02b3e6102cbd1d2bdc9613e3da54e782f59',
+475 silly resolved     bugs: { url: 'https://github.com/suryagh/tsscmp/issues' },
+475 silly resolved     homepage: 'https://github.com/suryagh/tsscmp#readme',
+475 silly resolved     _id: 'tsscmp@1.0.5',
+475 silly resolved     _shasum: '7dc4a33af71581ab4337da91d85ca5427ebd9a97',
+475 silly resolved     _from: 'tsscmp@1.0.5',
+475 silly resolved     _npmVersion: '3.6.0',
+475 silly resolved     _nodeVersion: '5.6.0',
+475 silly resolved     _npmUser: { name: 'suryagh', email: 'surya.com@gmail.com' },
+475 silly resolved     dist:
+475 silly resolved      { shasum: '7dc4a33af71581ab4337da91d85ca5427ebd9a97',
+475 silly resolved        tarball: 'https://registry.npmjs.org/tsscmp/-/tsscmp-1.0.5.tgz' },
+475 silly resolved     maintainers: [ [Object] ],
+475 silly resolved     _npmOperationalInternal:
+475 silly resolved      { host: 'packages-16-east.internal.npmjs.com',
+475 silly resolved        tmp: 'tmp/tsscmp-1.0.5.tgz_1464226502956_0.48576042777858675' },
+475 silly resolved     directories: {},
+475 silly resolved     _resolved: 'https://registry.npmjs.org/tsscmp/-/tsscmp-1.0.5.tgz',
+475 silly resolved     readme: 'ERROR: No README data found!' },
+475 silly resolved   { name: 'rndm',
+475 silly resolved     description: 'random string generator',
+475 silly resolved     version: '1.2.0',
+475 silly resolved     author:
+475 silly resolved      { name: 'Jonathan Ong',
+475 silly resolved        email: 'me@jongleberry.com',
+475 silly resolved        url: 'http://jongleberry.com' },
+475 silly resolved     license: 'MIT',
+475 silly resolved     devDependencies: { mocha: '2', istanbul: '0' },
+475 silly resolved     repository:
+475 silly resolved      { type: 'git',
+475 silly resolved        url: 'git+https://github.com/crypto-utils/rndm.git' },
+475 silly resolved     scripts:
+475 silly resolved      { test: 'mocha',
+475 silly resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot',
+475 silly resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot' },
+475 silly resolved     keywords: [ 'random', 'number', 'generator', 'uid', 'id' ],
+475 silly resolved     files: [ 'index.js' ],
+475 silly resolved     gitHead: '9d566c844a4c83487f3b2621be5b6588d5a2b617',
+475 silly resolved     bugs: { url: 'https://github.com/crypto-utils/rndm/issues' },
+475 silly resolved     homepage: 'https://github.com/crypto-utils/rndm#readme',
+475 silly resolved     _id: 'rndm@1.2.0',
+475 silly resolved     _shasum: 'f33fe9cfb52bbfd520aa18323bc65db110a1b76c',
+475 silly resolved     _from: 'rndm@1.2.0',
+475 silly resolved     _npmVersion: '2.14.4',
+475 silly resolved     _nodeVersion: '4.1.1',
+475 silly resolved     _npmUser: { name: 'coderhaoxin', email: 'coderhaoxin@outlook.com' },
+475 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+475 silly resolved     dist:
+475 silly resolved      { shasum: 'f33fe9cfb52bbfd520aa18323bc65db110a1b76c',
+475 silly resolved        tarball: 'https://registry.npmjs.org/rndm/-/rndm-1.2.0.tgz' },
+475 silly resolved     directories: {},
+475 silly resolved     _resolved: 'https://registry.npmjs.org/rndm/-/rndm-1.2.0.tgz',
+475 silly resolved     readme: 'ERROR: No README data found!' },
+475 silly resolved   { name: 'uid-safe',
+475 silly resolved     description: 'URL and cookie safe UIDs',
+475 silly resolved     version: '2.1.4',
+475 silly resolved     contributors: [ [Object], [Object] ],
+475 silly resolved     license: 'MIT',
+475 silly resolved     repository:
+475 silly resolved      { type: 'git',
+475 silly resolved        url: 'git+https://github.com/crypto-utils/uid-safe.git' },
+475 silly resolved     dependencies: { 'random-bytes': '~1.0.0' },
+475 silly resolved     devDependencies:
+475 silly resolved      { bluebird: '3.4.7',
+475 silly resolved        eslint: '3.16.1',
+475 silly resolved        'eslint-config-standard': '7.0.0',
+475 silly resolved        'eslint-plugin-promise': '3.5.0',
+475 silly resolved        'eslint-plugin-standard': '2.1.1',
+475 silly resolved        istanbul: '0.4.5',
+475 silly resolved        mocha: '2.5.3' },
+475 silly resolved     files: [ 'LICENSE', 'HISTORY.md', 'README.md', 'index.js' ],
+475 silly resolved     engines: { node: '>= 0.8' },
+475 silly resolved     scripts:
+475 silly resolved      { lint: 'eslint .',
+475 silly resolved        test: 'mocha --trace-deprecation --reporter spec --bail --check-leaks test/',
+475 silly resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --trace-deprecation --reporter dot --check-leaks test/',
+475 silly resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --trace-deprecation --reporter spec --check-leaks test/' },
+475 silly resolved     keywords: [ 'random', 'generator', 'uid', 'safe' ],
+475 silly resolved     gitHead: '4964cfbf8aa89e1988e30f26e2ecaa4ba239222d',
+475 silly resolved     bugs: { url: 'https://github.com/crypto-utils/uid-safe/issues' },
+475 silly resolved     homepage: 'https://github.com/crypto-utils/uid-safe#readme',
+475 silly resolved     _id: 'uid-safe@2.1.4',
+475 silly resolved     _shasum: '3ad6f38368c6d4c8c75ec17623fb79aa1d071d81',
+475 silly resolved     _from: 'uid-safe@2.1.4',
+475 silly resolved     _npmVersion: '2.15.11',
+475 silly resolved     _nodeVersion: '4.7.3',
+475 silly resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+475 silly resolved     dist:
+475 silly resolved      { shasum: '3ad6f38368c6d4c8c75ec17623fb79aa1d071d81',
+475 silly resolved        tarball: 'https://registry.npmjs.org/uid-safe/-/uid-safe-2.1.4.tgz' },
+475 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+475 silly resolved     _npmOperationalInternal:
+475 silly resolved      { host: 'packages-18-east.internal.npmjs.com',
+475 silly resolved        tmp: 'tmp/uid-safe-2.1.4.tgz_1488511355733_0.1465235783252865' },
+475 silly resolved     directories: {},
+475 silly resolved     _resolved: 'https://registry.npmjs.org/uid-safe/-/uid-safe-2.1.4.tgz',
+475 silly resolved     readme: 'ERROR: No README data found!' } ]
+476 info install tsscmp@1.0.5 into /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf
+477 info install rndm@1.2.0 into /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf
+478 info install uid-safe@2.1.4 into /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf
+479 info installOne tsscmp@1.0.5
+480 info installOne rndm@1.2.0
+481 info installOne uid-safe@2.1.4
+482 verbose node_modules/csurf/node_modules/csrf/node_modules/tsscmp unbuild
+483 verbose node_modules/csurf/node_modules/csrf/node_modules/rndm unbuild
+484 verbose node_modules/csurf/node_modules/csrf/node_modules/uid-safe unbuild
+485 silly gunzTarPerm modes [ '755', '644' ]
+486 verbose tar unpack /home/knormand/.npm/tsscmp/1.0.5/package.tgz
+487 silly lockFile 64b1477d-modules-csrf-node-modules-tsscmp tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/tsscmp
+488 verbose lock tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/tsscmp /home/knormand/.npm/64b1477d-modules-csrf-node-modules-tsscmp.lock
+489 silly lockFile e71135e2-and-npm-tsscmp-1-0-5-package-tgz tar:///home/knormand/.npm/tsscmp/1.0.5/package.tgz
+490 verbose lock tar:///home/knormand/.npm/tsscmp/1.0.5/package.tgz /home/knormand/.npm/e71135e2-and-npm-tsscmp-1-0-5-package-tgz.lock
+491 silly gunzTarPerm modes [ '755', '644' ]
+492 verbose tar unpack /home/knormand/.npm/rndm/1.2.0/package.tgz
+493 silly lockFile 94d0e200-e-modules-csrf-node-modules-rndm tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/rndm
+494 verbose lock tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/rndm /home/knormand/.npm/94d0e200-e-modules-csrf-node-modules-rndm.lock
+495 silly lockFile 4d124e8c-rmand-npm-rndm-1-2-0-package-tgz tar:///home/knormand/.npm/rndm/1.2.0/package.tgz
+496 verbose lock tar:///home/knormand/.npm/rndm/1.2.0/package.tgz /home/knormand/.npm/4d124e8c-rmand-npm-rndm-1-2-0-package-tgz.lock
+497 verbose tar unpack /home/knormand/.npm/uid-safe/2.1.4/package.tgz
+498 silly lockFile c2dc0816-dules-csrf-node-modules-uid-safe tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe
+499 verbose lock tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe /home/knormand/.npm/c2dc0816-dules-csrf-node-modules-uid-safe.lock
+500 silly lockFile 1fc4c278-d-npm-uid-safe-2-1-4-package-tgz tar:///home/knormand/.npm/uid-safe/2.1.4/package.tgz
+501 verbose lock tar:///home/knormand/.npm/uid-safe/2.1.4/package.tgz /home/knormand/.npm/1fc4c278-d-npm-uid-safe-2-1-4-package-tgz.lock
+502 silly gunzTarPerm modes [ '755', '644' ]
+503 silly gunzTarPerm modes [ '755', '644' ]
+504 silly gunzTarPerm extractEntry package.json
+505 silly gunzTarPerm modes [ '755', '644' ]
+506 silly gunzTarPerm extractEntry package.json
+507 silly gunzTarPerm modes [ '755', '644' ]
+508 silly gunzTarPerm extractEntry package.json
+509 silly gunzTarPerm extractEntry README.md
+510 silly gunzTarPerm extractEntry LICENSE
+511 silly gunzTarPerm extractEntry package.json
+512 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+513 silly gunzTarPerm extractEntry package.json
+514 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+515 silly gunzTarPerm extractEntry README.md
+516 silly gunzTarPerm extractEntry LICENSE
+517 silly gunzTarPerm extractEntry package.json
+518 silly gunzTarPerm extractEntry README.md
+519 silly gunzTarPerm extractEntry LICENSE
+520 silly gunzTarPerm extractEntry README.md
+521 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+522 silly gunzTarPerm extractEntry LICENSE
+523 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+524 silly gunzTarPerm extractEntry .npmignore
+525 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+526 silly gunzTarPerm extractEntry README.md
+527 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+528 silly gunzTarPerm extractEntry README.md
+529 silly gunzTarPerm extractEntry LICENSE
+530 silly gunzTarPerm extractEntry index.js
+531 silly gunzTarPerm extractEntry inherits.js
+532 silly gunzTarPerm extractEntry inherits_browser.js
+533 silly gunzTarPerm extractEntry index.js
+534 silly gunzTarPerm extractEntry LICENSE
+535 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+536 silly gunzTarPerm extractEntry .travis.yml
+537 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+538 silly gunzTarPerm extractEntry index.js
+539 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+540 silly gunzTarPerm extractEntry HISTORY.md
+541 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+542 silly gunzTarPerm extractEntry index.js
+543 silly gunzTarPerm extractEntry HISTORY.md
+544 silly gunzTarPerm extractEntry codes.json
+545 silly gunzTarPerm extractEntry appveyor.yml
+546 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+547 silly gunzTarPerm extractEntry lib/index.js
+548 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+549 silly gunzTarPerm extractEntry test/benchmark/index.js
+550 silly gunzTarPerm modified mode [ 'test/benchmark/index.js', 436, 420 ]
+551 silly gunzTarPerm extractEntry test/unit/index.js
+552 silly gunzTarPerm modified mode [ 'test/unit/index.js', 436, 420 ]
+553 silly lockFile a809763a-rors-node-modules-setprototypeof tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/setprototypeof
+554 silly lockFile a809763a-rors-node-modules-setprototypeof tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/setprototypeof
+555 silly lockFile 9e3562c1-setprototypeof-1-0-2-package-tgz tar:///home/knormand/.npm/setprototypeof/1.0.2/package.tgz
+556 silly lockFile 9e3562c1-setprototypeof-1-0-2-package-tgz tar:///home/knormand/.npm/setprototypeof/1.0.2/package.tgz
+557 silly lockFile 94d0e200-e-modules-csrf-node-modules-rndm tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/rndm
+558 silly lockFile 94d0e200-e-modules-csrf-node-modules-rndm tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/rndm
+559 silly lockFile 4d124e8c-rmand-npm-rndm-1-2-0-package-tgz tar:///home/knormand/.npm/rndm/1.2.0/package.tgz
+560 silly lockFile 4d124e8c-rmand-npm-rndm-1-2-0-package-tgz tar:///home/knormand/.npm/rndm/1.2.0/package.tgz
+561 info preinstall setprototypeof@1.0.2
+562 silly lockFile 139a9b1d-ttp-errors-node-modules-inherits tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/inherits
+563 silly lockFile 139a9b1d-ttp-errors-node-modules-inherits tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/inherits
+564 verbose readDependencies using package.json deps
+565 silly lockFile 362778ea-d-npm-inherits-2-0-3-package-tgz tar:///home/knormand/.npm/inherits/2.0.3/package.tgz
+566 silly lockFile 362778ea-d-npm-inherits-2-0-3-package-tgz tar:///home/knormand/.npm/inherits/2.0.3/package.tgz
+567 verbose readDependencies using package.json deps
+568 silly resolved []
+569 verbose about to build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/setprototypeof
+570 info build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/setprototypeof
+571 verbose linkStuff [ false,
+571 verbose linkStuff   false,
+571 verbose linkStuff   false,
+571 verbose linkStuff   '/vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules' ]
+572 info linkStuff setprototypeof@1.0.2
+573 verbose linkBins setprototypeof@1.0.2
+574 verbose linkMans setprototypeof@1.0.2
+575 verbose rebuildBundles setprototypeof@1.0.2
+576 info install setprototypeof@1.0.2
+577 info preinstall rndm@1.2.0
+578 info postinstall setprototypeof@1.0.2
+579 verbose readDependencies using package.json deps
+580 silly lockFile c2dc0816-dules-csrf-node-modules-uid-safe tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe
+581 silly lockFile c2dc0816-dules-csrf-node-modules-uid-safe tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe
+582 verbose readDependencies using package.json deps
+583 silly resolved []
+584 verbose about to build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/rndm
+585 info build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/rndm
+586 verbose linkStuff [ false,
+586 verbose linkStuff   false,
+586 verbose linkStuff   false,
+586 verbose linkStuff   '/vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules' ]
+587 info linkStuff rndm@1.2.0
+588 verbose linkBins rndm@1.2.0
+589 verbose linkMans rndm@1.2.0
+590 verbose rebuildBundles rndm@1.2.0
+591 info install rndm@1.2.0
+592 info preinstall inherits@2.0.3
+593 silly lockFile 1fc4c278-d-npm-uid-safe-2-1-4-package-tgz tar:///home/knormand/.npm/uid-safe/2.1.4/package.tgz
+594 silly lockFile 1fc4c278-d-npm-uid-safe-2-1-4-package-tgz tar:///home/knormand/.npm/uid-safe/2.1.4/package.tgz
+595 info postinstall rndm@1.2.0
+596 verbose readDependencies using package.json deps
+597 verbose readDependencies using package.json deps
+598 silly resolved []
+599 verbose about to build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/inherits
+600 info build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/inherits
+601 verbose linkStuff [ false,
+601 verbose linkStuff   false,
+601 verbose linkStuff   false,
+601 verbose linkStuff   '/vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules' ]
+602 info linkStuff inherits@2.0.3
+603 verbose linkBins inherits@2.0.3
+604 verbose linkMans inherits@2.0.3
+605 verbose rebuildBundles inherits@2.0.3
+606 info install inherits@2.0.3
+607 info postinstall inherits@2.0.3
+608 info preinstall uid-safe@2.1.4
+609 verbose readDependencies using package.json deps
+610 verbose readDependencies using package.json deps
+611 silly lockFile 52008a9b-ttp-errors-node-modules-statuses tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/statuses
+612 silly lockFile 52008a9b-ttp-errors-node-modules-statuses tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/statuses
+613 verbose cache add [ 'random-bytes@~1.0.0', null ]
+614 verbose cache add name=undefined spec="random-bytes@~1.0.0" args=["random-bytes@~1.0.0",null]
+615 verbose parsed url { protocol: null,
+615 verbose parsed url   slashes: null,
+615 verbose parsed url   auth: null,
+615 verbose parsed url   host: null,
+615 verbose parsed url   port: null,
+615 verbose parsed url   hostname: null,
+615 verbose parsed url   hash: null,
+615 verbose parsed url   search: null,
+615 verbose parsed url   query: null,
+615 verbose parsed url   pathname: 'random-bytes@~1.0.0',
+615 verbose parsed url   path: 'random-bytes@~1.0.0',
+615 verbose parsed url   href: 'random-bytes@~1.0.0' }
+616 verbose cache add name="random-bytes" spec="~1.0.0" args=["random-bytes","~1.0.0"]
+617 verbose parsed url { protocol: null,
+617 verbose parsed url   slashes: null,
+617 verbose parsed url   auth: null,
+617 verbose parsed url   host: null,
+617 verbose parsed url   port: null,
+617 verbose parsed url   hostname: null,
+617 verbose parsed url   hash: null,
+617 verbose parsed url   search: null,
+617 verbose parsed url   query: null,
+617 verbose parsed url   pathname: '~1.0.0',
+617 verbose parsed url   path: '~1.0.0',
+617 verbose parsed url   href: '~1.0.0' }
+618 verbose addNamed [ 'random-bytes', '~1.0.0' ]
+619 verbose addNamed [ null, '>=1.0.0-0 <1.1.0-0' ]
+620 silly lockFile f72524fc-random-bytes-1-0-0 random-bytes@~1.0.0
+621 verbose lock random-bytes@~1.0.0 /home/knormand/.npm/f72524fc-random-bytes-1-0-0.lock
+622 silly lockFile c0ccf834-d-npm-statuses-1-5-0-package-tgz tar:///home/knormand/.npm/statuses/1.5.0/package.tgz
+623 silly lockFile c0ccf834-d-npm-statuses-1-5-0-package-tgz tar:///home/knormand/.npm/statuses/1.5.0/package.tgz
+624 silly addNameRange { name: 'random-bytes',
+624 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+624 silly addNameRange   hasData: false }
+625 verbose request where is /random-bytes
+626 verbose request registry https://registry.npmjs.org/
+627 verbose url raw /random-bytes
+628 verbose url resolving [ 'https://registry.npmjs.org/', './random-bytes' ]
+629 verbose url resolved https://registry.npmjs.org/random-bytes
+630 verbose request where is https://registry.npmjs.org/random-bytes
+631 info trying registry request attempt 1 at 10:08:47
+632 verbose etag "59064d44-1174"
+633 http GET https://registry.npmjs.org/random-bytes
+634 info preinstall statuses@1.5.0
+635 verbose readDependencies using package.json deps
+636 verbose readDependencies using package.json deps
+637 silly resolved []
+638 verbose about to build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/statuses
+639 info build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules/statuses
+640 verbose linkStuff [ false,
+640 verbose linkStuff   false,
+640 verbose linkStuff   false,
+640 verbose linkStuff   '/vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors/node_modules' ]
+641 info linkStuff statuses@1.5.0
+642 verbose linkBins statuses@1.5.0
+643 verbose linkMans statuses@1.5.0
+644 verbose rebuildBundles statuses@1.5.0
+645 info install statuses@1.5.0
+646 info postinstall statuses@1.5.0
+647 verbose about to build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors
+648 info build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/http-errors
+649 verbose linkStuff [ false,
+649 verbose linkStuff   false,
+649 verbose linkStuff   false,
+649 verbose linkStuff   '/vol/home/knormand/security_lab/node_modules/csurf/node_modules' ]
+650 info linkStuff http-errors@1.5.1
+651 verbose linkBins http-errors@1.5.1
+652 verbose linkMans http-errors@1.5.1
+653 verbose rebuildBundles http-errors@1.5.1
+654 http 304 https://registry.npmjs.org/random-bytes
+655 silly registry.get cb [ 304,
+655 silly registry.get   { date: 'Mon, 16 Apr 2018 14:08:47 GMT',
+655 silly registry.get     via: '1.1 varnish',
+655 silly registry.get     'cache-control': 'max-age=300',
+655 silly registry.get     etag: '"59064d44-1174"',
+655 silly registry.get     age: '13813',
+655 silly registry.get     connection: 'keep-alive',
+655 silly registry.get     'x-served-by': 'cache-bos8235-BOS',
+655 silly registry.get     'x-cache': 'HIT',
+655 silly registry.get     'x-cache-hits': '1',
+655 silly registry.get     'x-timer': 'S1523887727.098738,VS0,VE1',
+655 silly registry.get     vary: 'Accept-Encoding, Accept' } ]
+656 verbose etag https://registry.npmjs.org/random-bytes from cache
+657 verbose rebuildBundles [ 'inherits', 'setprototypeof', 'statuses' ]
+658 info install http-errors@1.5.1
+659 info postinstall http-errors@1.5.1
+660 silly addNameRange number 2 { name: 'random-bytes',
+660 silly addNameRange   range: '>=1.0.0-0 <1.1.0-0',
+660 silly addNameRange   hasData: true }
+661 silly addNameRange versions [ 'random-bytes', [ '1.0.0' ] ]
+662 verbose addNamed [ 'random-bytes', '1.0.0' ]
+663 verbose addNamed [ '1.0.0', '1.0.0' ]
+664 silly lockFile 8bb33c09-random-bytes-1-0-0 random-bytes@1.0.0
+665 verbose lock random-bytes@1.0.0 /home/knormand/.npm/8bb33c09-random-bytes-1-0-0.lock
+666 silly lockFile 8bb33c09-random-bytes-1-0-0 random-bytes@1.0.0
+667 silly lockFile 8bb33c09-random-bytes-1-0-0 random-bytes@1.0.0
+668 silly lockFile f72524fc-random-bytes-1-0-0 random-bytes@~1.0.0
+669 silly lockFile f72524fc-random-bytes-1-0-0 random-bytes@~1.0.0
+670 silly lockFile 64b1477d-modules-csrf-node-modules-tsscmp tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/tsscmp
+671 silly lockFile 64b1477d-modules-csrf-node-modules-tsscmp tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/tsscmp
+672 silly lockFile e71135e2-and-npm-tsscmp-1-0-5-package-tgz tar:///home/knormand/.npm/tsscmp/1.0.5/package.tgz
+673 silly lockFile e71135e2-and-npm-tsscmp-1-0-5-package-tgz tar:///home/knormand/.npm/tsscmp/1.0.5/package.tgz
+674 info preinstall tsscmp@1.0.5
+675 verbose readDependencies using package.json deps
+676 verbose readDependencies using package.json deps
+677 silly resolved []
+678 verbose about to build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/tsscmp
+679 info build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/tsscmp
+680 verbose linkStuff [ false,
+680 verbose linkStuff   false,
+680 verbose linkStuff   false,
+680 verbose linkStuff   '/vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules' ]
+681 info linkStuff tsscmp@1.0.5
+682 verbose linkBins tsscmp@1.0.5
+683 verbose linkMans tsscmp@1.0.5
+684 verbose rebuildBundles tsscmp@1.0.5
+685 info install tsscmp@1.0.5
+686 info postinstall tsscmp@1.0.5
+687 silly resolved [ { name: 'random-bytes',
+687 silly resolved     description: 'URL and cookie safe UIDs',
+687 silly resolved     version: '1.0.0',
+687 silly resolved     contributors: [ [Object] ],
+687 silly resolved     license: 'MIT',
+687 silly resolved     repository:
+687 silly resolved      { type: 'git',
+687 silly resolved        url: 'https://github.com/crypto-utils/random-bytes' },
+687 silly resolved     devDependencies:
+687 silly resolved      { bluebird: '3.1.1',
+687 silly resolved        istanbul: '0.4.2',
+687 silly resolved        mocha: '2.3.4',
+687 silly resolved        proxyquire: '1.2.0' },
+687 silly resolved     files: [ 'LICENSE', 'HISTORY.md', 'README.md', 'index.js' ],
+687 silly resolved     engines: { node: '>= 0.8' },
+687 silly resolved     scripts:
+687 silly resolved      { test: 'mocha --trace-deprecation --reporter spec --bail --check-leaks test/',
+687 silly resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --trace-deprecation --reporter dot --check-leaks test/',
+687 silly resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --trace-deprecation --reporter spec --check-leaks test/' },
+687 silly resolved     keywords: [ 'bytes', 'generator', 'random', 'safe' ],
+687 silly resolved     gitHead: '3dcd47425a3dfe858ee8debcd4db0c1222110bc3',
+687 silly resolved     bugs: { url: 'https://github.com/crypto-utils/random-bytes/issues' },
+687 silly resolved     homepage: 'https://github.com/crypto-utils/random-bytes',
+687 silly resolved     _id: 'random-bytes@1.0.0',
+687 silly resolved     _shasum: '4f68a1dc0ae58bd3fb95848c30324db75d64360b',
+687 silly resolved     _from: 'random-bytes@~1.0.0',
+687 silly resolved     _npmVersion: '1.4.28',
+687 silly resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+687 silly resolved     maintainers: [ [Object] ],
+687 silly resolved     dist:
+687 silly resolved      { shasum: '4f68a1dc0ae58bd3fb95848c30324db75d64360b',
+687 silly resolved        tarball: 'https://registry.npmjs.org/random-bytes/-/random-bytes-1.0.0.tgz' },
+687 silly resolved     directories: {},
+687 silly resolved     _resolved: 'https://registry.npmjs.org/random-bytes/-/random-bytes-1.0.0.tgz',
+687 silly resolved     readme: 'ERROR: No README data found!' } ]
+688 info install random-bytes@1.0.0 into /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe
+689 info installOne random-bytes@1.0.0
+690 verbose node_modules/csurf/node_modules/csrf/node_modules/uid-safe/node_modules/random-bytes unbuild
+691 verbose tar unpack /home/knormand/.npm/random-bytes/1.0.0/package.tgz
+692 silly lockFile 8586f3fe-d-safe-node-modules-random-bytes tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/node_modules/random-bytes
+693 verbose lock tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/node_modules/random-bytes /home/knormand/.npm/8586f3fe-d-safe-node-modules-random-bytes.lock
+694 silly lockFile ab6a4950-m-random-bytes-1-0-0-package-tgz tar:///home/knormand/.npm/random-bytes/1.0.0/package.tgz
+695 verbose lock tar:///home/knormand/.npm/random-bytes/1.0.0/package.tgz /home/knormand/.npm/ab6a4950-m-random-bytes-1-0-0-package-tgz.lock
+696 silly gunzTarPerm modes [ '755', '644' ]
+697 silly gunzTarPerm extractEntry package.json
+698 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+699 silly gunzTarPerm extractEntry README.md
+700 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+701 silly gunzTarPerm extractEntry LICENSE
+702 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+703 silly gunzTarPerm extractEntry index.js
+704 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+705 silly gunzTarPerm extractEntry HISTORY.md
+706 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+707 silly lockFile 8586f3fe-d-safe-node-modules-random-bytes tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/node_modules/random-bytes
+708 silly lockFile 8586f3fe-d-safe-node-modules-random-bytes tar:///vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/node_modules/random-bytes
+709 silly lockFile ab6a4950-m-random-bytes-1-0-0-package-tgz tar:///home/knormand/.npm/random-bytes/1.0.0/package.tgz
+710 silly lockFile ab6a4950-m-random-bytes-1-0-0-package-tgz tar:///home/knormand/.npm/random-bytes/1.0.0/package.tgz
+711 info preinstall random-bytes@1.0.0
+712 verbose readDependencies using package.json deps
+713 verbose readDependencies using package.json deps
+714 silly resolved []
+715 verbose about to build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/node_modules/random-bytes
+716 info build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/node_modules/random-bytes
+717 verbose linkStuff [ false,
+717 verbose linkStuff   false,
+717 verbose linkStuff   false,
+717 verbose linkStuff   '/vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe/node_modules' ]
+718 info linkStuff random-bytes@1.0.0
+719 verbose linkBins random-bytes@1.0.0
+720 verbose linkMans random-bytes@1.0.0
+721 verbose rebuildBundles random-bytes@1.0.0
+722 info install random-bytes@1.0.0
+723 info postinstall random-bytes@1.0.0
+724 verbose about to build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe
+725 info build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules/uid-safe
+726 verbose linkStuff [ false,
+726 verbose linkStuff   false,
+726 verbose linkStuff   false,
+726 verbose linkStuff   '/vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf/node_modules' ]
+727 info linkStuff uid-safe@2.1.4
+728 verbose linkBins uid-safe@2.1.4
+729 verbose linkMans uid-safe@2.1.4
+730 verbose rebuildBundles uid-safe@2.1.4
+731 verbose rebuildBundles [ 'random-bytes' ]
+732 info install uid-safe@2.1.4
+733 info postinstall uid-safe@2.1.4
+734 verbose about to build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf
+735 info build /vol/home/knormand/security_lab/node_modules/csurf/node_modules/csrf
+736 verbose linkStuff [ false,
+736 verbose linkStuff   false,
+736 verbose linkStuff   false,
+736 verbose linkStuff   '/vol/home/knormand/security_lab/node_modules/csurf/node_modules' ]
+737 info linkStuff csrf@3.0.6
+738 verbose linkBins csrf@3.0.6
+739 verbose linkMans csrf@3.0.6
+740 verbose rebuildBundles csrf@3.0.6
+741 verbose rebuildBundles [ 'rndm', 'tsscmp', 'uid-safe' ]
+742 info install csrf@3.0.6
+743 info postinstall csrf@3.0.6
+744 verbose about to build /vol/home/knormand/security_lab/node_modules/csurf
+745 info build /vol/home/knormand/security_lab/node_modules/csurf
+746 verbose linkStuff [ false,
+746 verbose linkStuff   false,
+746 verbose linkStuff   false,
+746 verbose linkStuff   '/vol/home/knormand/security_lab/node_modules' ]
+747 info linkStuff csurf@1.9.0
+748 verbose linkBins csurf@1.9.0
+749 verbose linkMans csurf@1.9.0
+750 verbose rebuildBundles csurf@1.9.0
+751 verbose rebuildBundles [ 'cookie', 'cookie-signature', 'csrf', 'http-errors' ]
+752 info install csurf@1.9.0
+753 info postinstall csurf@1.9.0
+754 error peerinvalid The package any-db does not satisfy its siblings' peerDependencies requirements!
+754 error peerinvalid Peer any-db-mysql@2.1.2 wants any-db@~2.1.0
+755 error System Linux 3.16.0-4-amd64
+756 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "csurf" "--save"
+757 error cwd /vol/home/knormand/security_lab
+758 error node -v v0.10.29
+759 error npm -v 1.4.21
+760 error code EPEERINVALID
+761 verbose exit [ 1, true ]
