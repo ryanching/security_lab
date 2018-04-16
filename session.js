@@ -92,8 +92,8 @@ function handleLoginRequest(req,res,next)
    var username = req.body.userName;
    var password = req.body.password;
 
-   var q = "SELECT * FROM User U WHERE U.userName = '$1'";
-   db.query(q,[username],function (e1,d1) { handleLoginRequest1(req,res,next,e1,d1); } );
+   var q = "SELECT * FROM User U WHERE U.userName = $1";
+   db.query(q,username,function (e1,d1) { handleLoginRequest1(req,res,next,e1,d1); } );
 }
 
 
@@ -199,7 +199,7 @@ function handleSignup(req,res,next)
     };
 
    if (validateSignup(userName, firstName, lastName, password, verify, email, errors)) {
-      var q = "SELECT * FROM User U WHERE U.userName = '$1'";
+      var q = "SELECT * FROM User U WHERE U.userName = $1";
       db.query(q,[username],function (e1,d1) { handleSignup1(req,res,next,errors,e1,d1); });
     }
     else {
@@ -225,7 +225,7 @@ function handleSignup1(req,res,next,errors,err,data)
     }
 
    var q = "INSERT INTO User ( userName, firstName, lastName, password, email) " +
-      "VALUES ( '$1','$2','$3','$4','$5')";
+      "VALUES ( $1,$2,$3,$4,$5)";
    db.query(q,[userName, firstName, lastName, password, email],function(e1,d1) { handleSignup2(req,res,next,e1,d1); } );
 }
 
@@ -237,8 +237,8 @@ function handleSignup2(req,res,next,err,data)
 
    var userName = req.body.userName;
 
-   var q = "SELECT * FROM User U WHERE U.userName = '$1'";
-   db.query(q,[userName],function (e1,d1) { handleSignup3(req,res,next,e1,d1); } );
+   var q = "SELECT * FROM User U WHERE U.userName = $1";
+   db.query(q,userName,function (e1,d1) { handleSignup3(req,res,next,e1,d1); } );
 }
 
 
