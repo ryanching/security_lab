@@ -15,13 +15,13 @@ var favicon = require("serve-favicon");
 var bodyParser = require("body-parser");
 var session = require("express-session");
 
-var csrf = require('csurf');
+//var csrf = require('csurf');
 
 var consolidate = require("consolidate"); // Templating library adapter for Express
 var swig = require("swig");
 var http = require("http");
 var marked = require("marked");
-
+var helmet = require("helmet");
 var logger = require("morgan");
 
 var config = require("./config.js");
@@ -47,6 +47,22 @@ function setup()
 
    app.disable("x-powered-by");
    app.use(favicon(__dirname + "/app/assets/favicon.ico"));
+
+   // uses helmet's xssFilter, hsts, and frameguard (as per helmet's default settings)
+   app.use(helmet());
+
+   // Disables client side caching
+   app.use(helmet.noCache());
+
+   // Sets content security policy to protect against injections
+   app.use(helmet.contentSecurityPolicy({
+     directives: {
+       defaultSrc: ["'self'"],
+       styleSrc: ["'self'", 'maxcdn.bootstrapcdn.com']
+     }
+   }))
+
+   app.use(helmet.xssFilter({setOnOldIE: true}));
 
    app.use(bodyParser.json());
    app.use(bodyParser.urlencoded({ extended: false }));

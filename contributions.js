@@ -34,8 +34,8 @@ function displayContributions0(req,res,next,sts)
 {
    var userid = req.session.userId;
 
-   var q = "SELECT * FROM Contributions WHERE userId = " + userid;
-   db.query(q,function (e1,d1) { displayContributions1(req,res,next,sts,e1,d1); } );
+   var q = "SELECT * FROM Contributions WHERE userId = $1";
+   db.query(q,[userid],function (e1,d1) { displayContributions1(req,res,next,sts,e1,d1); } );
 }
 
 
@@ -83,9 +83,8 @@ function handleContributionsUpdate(req,res,next)
 			 });
     }
 
-   var q = "UPDATE Contributions SET preTax = " + preTax + ", afterTax = " + afterTax +
-      ", roth = " + roth + " WHERE userId = " + userId;
-   db.query(q,function (e1,d1) { handleContributionsUpdate1(req,res,next,e1,d1); } );
+   var q = "UPDATE Contributions SET preTax = $1, afterTax = $2, roth = $3 WHERE userId = $4";
+   db.query(q,[preTax, afterTax, roth, userId],function (e1,d1) { handleContributionsUpdate1(req,res,next,e1,d1); } );
 }
 
 

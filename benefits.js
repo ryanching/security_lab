@@ -29,7 +29,7 @@ function displayBenefits(req,res,next)
 {
     displayBenefits0(req,res,next,false);
 }
-   
+
 
 
 function displayBenefits0(req,res,next,succ)
@@ -53,7 +53,7 @@ function displayBenefits1(req,res,next,succ,err,data)
        console.log("CONVERT",date,string);
        data.rows[i].benefitStartDate = string;
     }
-   
+
    var doc = { users : data.rows, user : { isAdmin : true } };
 
    if (succ) doc.updateSuccess = true;
@@ -75,8 +75,8 @@ function updateBenefits(req,res,next)
    var userid = req.body.userId;
    var date = req.body.benefitStartDate;
 
-   var q = "UPDATE User SET benefitStartDate = '" + date + "' WHERE userId = " + userid;
-   db.query(q,function(e1,d1) { updateBenefits1(req,res,next,e1,d1); } );
+   var q = "UPDATE User SET benefitStartDate = $1 WHERE userId = $2";
+   db.query(q,[date, userid],function(e1,d1) { updateBenefits1(req,res,next,e1,d1); } );
 }
 
 
