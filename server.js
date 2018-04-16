@@ -149,7 +149,7 @@ function setup()
 	 autoescape: false
     });
 
-   var port = 8080//config.PORT;
+   var port = config.PORT;
    var server = app.listen(port);
 
    console.log("Listening on " + port);
