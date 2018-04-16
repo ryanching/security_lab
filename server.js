@@ -15,7 +15,7 @@ var favicon = require("serve-favicon");
 var bodyParser = require("body-parser");
 var session = require("express-session");
 
-var csrf = require('csurf');
+//var csrf = require('csurf');
 
 var consolidate = require("consolidate"); // Templating library adapter for Express
 var swig = require("swig");
