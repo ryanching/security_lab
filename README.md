@@ -7,6 +7,8 @@ We all tried to improve the defenses associated with our server (on port 7020).
 
 We added Helmet to add XSS and other protections. We added csurf to protect our server from CSRF attacks. We updated the sql queries to protect against sql injections.
 
+Git: https://github.com/ryanching/security_lab.git
+
 
 ## Phase 2: Configuration
 Before reading this README, please make sure you've completed the instructions on Prelab 2 Phase 1. As a reminder, that phase introduced you to the VM where your application will be running on. It was also during that phase where you've forked this directory.
