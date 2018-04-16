@@ -29,7 +29,7 @@ var contributions = require("./contributions.js");
 var benefits = require("./benefits.js");
 var allocations = require("./allocations.js");
 var memos = require("./memos.js");
- 
+
 
 
 
@@ -48,7 +48,7 @@ function setup()
 
    app.use(bodyParser.json());
    app.use(bodyParser.urlencoded({ extended: false }));
-   
+
    app.use(session({ secret: config.COOKIE_SECRET,
 		     saveUninitialized: true,
 		     resave: true }));
@@ -59,9 +59,9 @@ function setup()
    app.set("views", __dirname + "/app/views");
 
    app.use(express.static(__dirname + "/app/assets"));
-   
+
    app.use(logger('combined'));
-   
+
    // intialize marked library
    marked.setOptions({ });
    app.locals.marked = marked;
@@ -124,7 +124,7 @@ function setup()
 	 autoescape: false
     });
 
-   var port = config.PORT;
+   var port = 8080//config.PORT;
    var server = app.listen(port);
 
    console.log("Listening on " + port);
